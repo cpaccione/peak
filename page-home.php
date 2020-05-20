@@ -26,13 +26,64 @@ Template Name: Peak Home
         <div class="container-1000">
             <h2>appliance repair services</h2>
             <p>commercial &amp; residential</p>
-            <a href="" class="button">learn more</a>
 
             <div class="service-grid">
-                <div class="icon">
-                    <img src="<?php echo esc_url(get_template_directory_uri() );?>/images/temp_icon.svg" alt="icon">
+                <div class="icon-wrap">
+                    <div class="icon">
+                        <img src="<?php echo esc_url(get_template_directory_uri() );?>/images/temp_icon.svg" alt="icon">
+                    </div>
+                    <p>Water Heater</p>
                 </div>
+
+                <div class="icon-wrap">
+                    <div class="icon">
+                        <img src="<?php echo esc_url(get_template_directory_uri() );?>/images/temp_icon.svg" alt="icon">
+                    </div>
+                    <p>Washer</p>
+                </div>
+
+                <div class="icon-wrap">
+                    <div class="icon">
+                        <img src="<?php echo esc_url(get_template_directory_uri() );?>/images/temp_icon.svg" alt="icon">
+                    </div>
+                    <p>Dryer</p>
+                </div>
+
+                <div class="icon-wrap">
+                    <div class="icon">
+                        <img src="<?php echo esc_url(get_template_directory_uri() );?>/images/temp_icon.svg" alt="icon">
+                    </div>
+                    <p>Dryer</p>
+                </div>
+                <div class="icon-wrap">
+                    <div class="icon">
+                        <img src="<?php echo esc_url(get_template_directory_uri() );?>/images/temp_icon.svg" alt="icon">
+                    </div>
+                    <p>Dryer</p>
+                </div>
+                <div class="icon-wrap">
+                    <div class="icon">
+                        <img src="<?php echo esc_url(get_template_directory_uri() );?>/images/temp_icon.svg" alt="icon">
+                    </div>
+                    <p>Dryer</p>
+                </div>
+                <div class="icon-wrap">
+                    <div class="icon">
+                        <img src="<?php echo esc_url(get_template_directory_uri() );?>/images/temp_icon.svg" alt="icon">
+                    </div>
+                    <p>Dryer</p>
+                </div>
+                <div class="icon-wrap">
+                    <div class="icon">
+                        <img src="<?php echo esc_url(get_template_directory_uri() );?>/images/temp_icon.svg" alt="icon">
+                    </div>
+                    <p>Dryer</p>
+                </div>
+
+
             </div>
+
+            <a href="" class="button">learn more</a>
         </div>
     </div>
 

@@ -143,8 +143,11 @@ add_action( 'widgets_init', 'peak_widgets_init' );
  * Enqueue scripts and styles.
  */
 function peak_scripts() {
-	wp_enqueue_style( 'roboto', 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@300;700&display=swap', array(), '1.0', 'all' );
-	wp_enqueue_style( 'peak-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_enqueue_style( 'roboto-condensed', 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap', array(), '1.0', 'all' );
+
+	wp_enqueue_style( 'roboto', 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap', array(), '1.0', 'all' );
+
+	// wp_enqueue_style( 'peak-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_enqueue_style( 'main-style', get_template_directory_uri() . '/css/peak.css', array(), '1.0', 'all' );
 	wp_style_add_data( 'peak-style', 'rtl', 'replace' );
 

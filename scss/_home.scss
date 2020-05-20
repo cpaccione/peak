@@ -1,0 +1,77 @@
+.home-hero {
+    background-image: url('../images/home-hero@2x.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    display: flex;
+    align-items: center;
+
+    @media (min-width: 700px) {
+        height: 500px;
+    }
+
+    .wrap {
+        padding: 2rem;
+        // max-width: 750px;
+
+        .button {
+            margin-right: 1rem;
+        }
+
+        h1 {
+            font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            font-size: 2rem;
+            line-height: 1;
+            text-transform: uppercase;
+            color: $white;
+            margin: 0 0 3rem 0;
+
+            @media (min-width: 400px) {
+                font-size: 2.5rem;
+            }
+
+            @media (min-width: 600px) {
+                font-size: 3.125rem;
+            }
+
+            @media (min-width: 800px) {
+                font-size: 5.625rem;
+            }
+        }
+    
+        h2 {
+            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            line-height: 1.2;
+            color: $white;
+            margin: 0 0 1rem 0;
+
+            @media (min-width: 400px) {
+                font-size: 1.2rem;
+            }
+
+            @media (min-width: 600px) {
+                font-size: 1.375rem;
+            }
+
+            @media (min-width: 800px) {
+                font-size: 1.5625rem;
+            }
+        }
+
+        .phone {
+            color: $white;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 300;
+            padding: 1rem 0 0 0;
+            display: inline-block;
+
+            @media (min-width: 400px) {
+                font-size: 1.25rem;
+            }
+        }
+    }
+}

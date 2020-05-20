@@ -1,0 +1,23 @@
+.button {
+    background-color: $peak-red;
+    transition: background-color 200ms linear;
+    color: $white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: .7rem 1.5rem .7rem 1.5rem;
+    border: 4px solid $peak-red;
+    // border-radius: 4px;
+    display: inline-block;
+
+    &:hover {
+        background-color: $white;
+        transition: background-color 200ms linear;
+        color: $peak-red;
+    }
+}
+
+.no-wrap {
+    white-space: nowrap;
+}

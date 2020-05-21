@@ -87,5 +87,31 @@ Template Name: Peak Home
         </div>
     </div>
 
+    <div class="pricing">
+        <div class="pricing-wrap">
+            <div class="col">
+                <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/images/dollar_icon.svg" alt="Dollar Icon">
+            </div>
+            <div class="col">
+                <h2>pricing</h2>
+                <p>Pricing includes a standard service charge which are factored towards repair costs if repairs are done.</p>
+                <ul>
+                    <li>$99 for residential appliances</li>
+                    <li>$69 for furnace and air conditions</li>
+                    <li>$139 for commercial units</li>
+                </ul>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="pricing-wrap">
+            <div class="col">
+                <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/images/gear_icon.svg" alt="Dollar Icon">
+            </div>
+            <div class="col">
+                <p>If your appliance cannot be repaired, we can help order new appliances to fit your space, with direct delivery and installation. Learn More</p>
+            </div>
+        </div>
+    </div>
+
 
 <?php get_footer(); ?>

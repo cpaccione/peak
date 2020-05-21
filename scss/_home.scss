@@ -89,9 +89,13 @@
         max-width: 660px;
         margin: 0 auto;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-gap: 2rem;
         padding: 2rem 0 4rem 0;
+
+        @media (min-width: 600px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
 
         .icon {
             background-color: $peak-blue-two;
@@ -108,5 +112,53 @@
             font-size: 1.125rem;
             font-weight: 700;
         }
+    }
+}
+
+.pricing {
+    background-color: $peak-blue;
+    color: $white;
+    padding: 3.375rem 1.5rem 3.75rem 1.5rem;
+
+    .pricing-wrap {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        max-width: 623px;
+        margin: 0 auto;
+
+        img {
+            margin-bottom: 1rem;
+        }
+
+        @media (min-width: 600px) {
+            grid-template-columns: 1fr 3fr;
+            text-align: left;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            color: $white;
+        }
+    
+        p {
+            font-size: 1.25rem;
+        }
+    
+        ul {
+            list-style: none;
+            font-size: 1.25rem;
+            font-weight: 700;
+            padding: 0;
+            margin: 0 0 2rem 0;
+        }
+    }
+
+    .line {
+        background-color: $white;
+        height: 1px;
+        max-width: 700px;
+        margin: 0 auto 2rem auto;
     }
 }

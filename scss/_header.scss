@@ -1,0 +1,52 @@
+.header-wrap {
+    background-color: $peak-nav-grey;
+}
+
+.site-branding {
+    display: flex;
+    align-self: center;
+
+    img {
+        width: 106px;
+        height: 72px;
+    }
+}
+
+.site-header {
+    background-color: $peak-nav-grey;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 100px;
+    padding: 0 1.5rem 0 1.5rem;
+
+    #site-navigation {
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        justify-content: flex-end;
+
+        ul {
+            li {
+                margin-right: 1.5rem;
+
+                a {
+                    font-size: 0.875rem;
+                    font-weight: 700;
+                    color: #000000;
+                    display: inline;   
+                }
+
+                .nav-button {
+                    background-color: $peak-blue-two;
+                    color: white;
+                    padding: .7rem 1rem .7rem 1rem;
+                    display: inline;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+}
+

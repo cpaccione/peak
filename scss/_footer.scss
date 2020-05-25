@@ -1,0 +1,128 @@
+.site-footer {
+    background-color: $black;
+
+    .site-info {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        padding: 3rem 0 2rem 0;
+
+        .schedule-service {
+            .button {
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 1rem;
+                font-weight: 700;
+                padding: 0.2rem .7rem 0rem .7rem;
+                border: 4px solid #E50019;
+                display: inline-block;
+                border-radius: 6px;
+                color: $white;
+
+                &:hover {
+                    color: $peak-red;
+                    border: 4px solid $white;
+                }
+            }
+
+            ul {
+                display: flex;
+                list-style: none;
+                padding: 0;
+
+                li {
+                    margin-right: 1rem;
+
+                    a {
+                        color: $white;
+
+                        &:last-child {
+                            font-size: 1rem;
+                            font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+                            color: $peak-blue;
+                            text-transform: uppercase;
+                        }
+
+                    }
+
+                    &:last-child {
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+
+        .footer-menu {
+            ul {
+                display: flex;
+                list-style: none;
+                padding: 0;
+
+                li {
+                    margin-right: 1rem;
+
+                    a {
+                        color: $white;
+                        font-size: 0.875rem;
+                        text-decoration: none;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+
+        .social-media {
+            ul {
+                padding: 0;
+                list-style: none;
+                display: flex;
+
+                li {
+                    margin-right: 1rem;
+
+                    a {
+                        color: $white;
+                        font-size: 0.875rem;
+                        text-decoration: none;
+                        transition: 0.3s;
+
+                        .fab {
+                            color: $white;
+                            transition: 0.3s;
+                        }
+
+                        &:hover {
+                            color: $peak-red;
+
+                            .fab {
+                                color: $peak-red;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-logos {
+            ul {
+                display: flex;
+                list-style: none;
+                padding: 0;
+
+                li {
+                    margin-right: 2rem;
+
+                    a {
+                        .authorized-dealer-logo {
+                            width: 113px;
+                        }
+
+                        .footer-logo {
+                            width: 106px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

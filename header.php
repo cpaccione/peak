@@ -25,6 +25,7 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'peak' ); ?></a>
 
+	<div class="header-wrap">
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<?php
@@ -55,5 +56,9 @@
 				)
 			);
 			?>
+			<ul class="phone-button">
+				<li><a href="#">847-510-8302</a></li>
+				<li><a href="#" class="nav-button">Schedule Service</a></li>
+			</ul>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

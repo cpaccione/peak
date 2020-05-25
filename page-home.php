@@ -90,7 +90,7 @@ Template Name: Peak Home
     <div class="pricing">
         <div class="pricing-wrap">
             <div class="col">
-                <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/images/dollar_icon.svg" alt="Dollar Icon">
+                <img style="display: inline-block;" src="<?php echo esc_url(get_template_directory_uri() ); ?>/images/dollar_icon.svg" alt="Dollar Icon">
             </div>
             <div class="col">
                 <h2>pricing</h2>
@@ -105,11 +105,68 @@ Template Name: Peak Home
         <div class="line"></div>
         <div class="pricing-wrap">
             <div class="col">
-                <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/images/gear_icon.svg" alt="Dollar Icon">
+                <img style="display: inline-block;" src="<?php echo esc_url(get_template_directory_uri() ); ?>/images/gear_icon.svg" alt="Dollar Icon">
             </div>
             <div class="col">
                 <p>If your appliance cannot be repaired, we can help order new appliances to fit your space, with direct delivery and installation. Learn More</p>
             </div>
+        </div>
+    </div>
+
+    <div class="two-alt">
+        <div class="col col-1">
+            <div class="wrap">
+                <h2>maintenance</h2>
+                <p>Own multiple property? Service tenants? Or simply want to ensure the lifespan of your appliance?</p>
+                <p>Save on future costs and replacements with routine maintenance.</p>
+                <a href="#" class="button">learn more</a>            
+            </div>
+        </div>
+        <div class="col col-2">
+            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/kitchen@2x.png" alt="Maintenance">
+        </div>
+        <div class="col col-3">
+            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/samsung_hvac@2x.png" alt="Installation">
+        </div>
+        <div class="col col-4">
+            <div class="wrap">
+            <h2>installation</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                <a href="#" class="button">learn more</a>            
+            </div>
+        </div>
+    </div>
+
+    <div class="testimonials">
+        <div class="container-1000">
+            <div class="testimonial-slider">
+                <div>
+                    <div class="test-wrap">
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h2>
+                    <p>- Jane Doe, Chicago</p>                
+                    </div>
+                </div>
+                <div>
+                    <div class="test-wrap">
+                        <h2>There are five pups. One for each of the Stark children. The direwolf is the sigil of your house. They were meant to have them.</h2>
+                        <p>- Jon Snow, Winterfell</p>            
+                    </div>
+                </div>
+                <div>
+                    <div class="test-wrap">
+                        <h2>I have a realistic grasp of my own strengths and weaknesses. My mind is my weapon. My brother has his sword, King Robert has his warhammer, and I have my mind… and a mind needs books as a sword needs a whetstone, if it is to keep its edge. That’s why I read so much, Jon Snow.</h2>
+                        <p>- Tyrion Lannister, King's Landing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="questions">
+        <div class="wrap">
+            <h2>have questions</h2>
+            <p>Reach out to us and we will be happy to help.</p>
+            <a href="#" class="button">contact us</a>
         </div>
     </div>
 

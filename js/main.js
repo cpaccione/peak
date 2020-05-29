@@ -4,10 +4,26 @@ jQuery(document).ready(function ($) {
 
 
     $('.testimonial-slider').slick({
-        dots: false,
         infinite: true,
         // autoplay: true,
         speed: 500,
-        adaptiveHeight: true
+        adaptiveHeight: true,
+        mobileFirst: true,
+        responsive: [
+            {
+                breakpoint: 0,
+                settings: {
+                    dots: true,
+                    arrows: false,
+                }
+            },
+            {
+                breakpoint: 1100,
+                settings: {
+                    dots: false,
+                    arrows: true,
+                }
+            }
+        ]
     });
 });

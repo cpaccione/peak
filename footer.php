@@ -17,8 +17,8 @@
 				<div class="col">
 					<div class="schedule-service">
 						<ul>
-							<li><a href="#" class="button">schedule service</a></li>
-							<li><a href="#">Financing Available</a></li>
+							<li><a href="#" class="service-button">schedule service</a></li>
+							<li><a href="#" class="financing-button">Financing Available</a></li>
 						</ul>
 					</div>
 					<div class="footer-menu">

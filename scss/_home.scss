@@ -225,22 +225,27 @@
 
 .testimonials {
     background-color: $peak-blue;
-    padding: 5rem 0 5rem 0;
+    padding: 4rem 1rem 2rem 1rem;
 
     // .slick-track {
     //     display: flex;
     //     align-items: center;
     // }
 
+    @media (min-width: 800px) {
+        padding: 5rem 1rem 5rem 1rem;
+    }
+
+
     .test-wrap {
         max-width: 800px;
         margin: 0 auto;
         text-align: center;
 
-        .quote {
-            font-size: 7.5rem;
-            line-height: 0.3;
-        }
+        // .quote {
+        //     font-size: 7.5rem;
+        //     line-height: 0.3;
+        // }
 
         h2 {
             color: $white;

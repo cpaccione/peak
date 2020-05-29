@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAWA,YAAa,CACT,OAAO,CAAE,IAAI,CACb,qBAAqB,CAAE,OAAO",
+"sources": ["two_columns.scss"],
+"names": [],
+"file": "two_columns.css"
+}

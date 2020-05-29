@@ -34,9 +34,10 @@
     grid-template-areas: "col-left" "col-right" "col-bottom";
 
     @media (min-width: 700px) {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1.5fr 1fr;
         grid-template-areas: "col-left col-right" "col-bottom col-bottom";
     }
+    
     .col-left {
         grid-area: col-left;
 

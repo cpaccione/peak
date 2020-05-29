@@ -1,0 +1,37 @@
+    .hero-with-image {
+		background-image: none !important;
+		background-color: #00A1ED;	
+		color: #ffffff;
+    }
+
+    .hero-with-image .hwi {
+    	height: 500px;
+    	display: flex;
+    }
+
+    .hero-with-image .hwi .wrap {
+    	max-width: 540px;
+    	align-self: center;
+    	padding: 0 1rem 0 1rem;
+    }
+
+    .hero-with-image h2 {
+    	font-size: 4rem;
+    	color: #ffffff;
+    }
+
+    .hero-with-image .sub-head {
+    	font-weight: 700;
+    }
+
+    @media (min-width: 962px) {
+
+	    .hero-with-image {
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: right;
+			background-color: #00A1ED;	
+			color: #ffffff;
+	    }
+
+    }

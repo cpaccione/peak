@@ -5,8 +5,9 @@ jQuery(document).ready(function ($) {
 
     $('.testimonial-slider').slick({
         infinite: true,
-        // autoplay: true,
-        speed: 500,
+        autoplay: true,
+        autoplaySpeed: 7000,
+        speed: 1000,
         adaptiveHeight: true,
         mobileFirst: true,
         responsive: [

@@ -1,0 +1,67 @@
+.main-hero {
+    background-color: $peak-blue-two;
+    color: $white;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+
+    @media (max-width: 960px) {
+        background-image: none !important;
+
+    }
+}
+
+.hero-with-image {
+    height: 500px;
+    display: flex;
+    align-items: center;
+
+    .wrap {
+        max-width: 539px;
+
+        h2 {
+            color: $white;
+        }
+    }
+}
+
+.form-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 3rem 0 3rem 0;
+    grid-gap: 4rem;
+
+    @media(min-width: 800px) {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .form {
+        background-color: $peak-light-grey;
+        padding: 1rem;
+    }
+}
+
+
+.financing {
+    background-color: $peak-blue;
+    text-align: center;
+    padding: 3rem 0 3rem 0;
+
+    .wrap {
+        max-width: 660px;
+        margin: 0 auto;
+
+        h2 {
+            font-size: 40px;
+            font-weight: 700;
+            color: $white;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 300;
+            color: $white;
+        }
+    }
+}

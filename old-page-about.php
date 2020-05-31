@@ -35,7 +35,7 @@ Template Name: Old
         </div>
     </div>
 
-    <div class="pricing">
+    <div class="about-pricing">
         <div class="col">
         <div class="wrap">
             <h2>Pricing</h2>

@@ -1,6 +1,17 @@
 .header-wrap {
     background-color: $peak-nav-grey;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
 }
+
+.logged-in .header-wrap {
+    top: 32px;
+}
+
 
 .site-branding {
     display: flex;
@@ -44,22 +55,43 @@
                     display: inline;   
                 }
 
-                .nav-button {
-                    background-color: $peak-blue-two;
-                    color: white;
-                    padding: .7rem 1rem .7rem 1rem;
-                    display: inline;
-                    border-radius: 4px;
-                }
+                // .nav-button {
+                //     background-color: $peak-blue-two;
+                //     color: white;
+                //     padding: .7rem 1rem .7rem 1rem;
+                //     display: inline;
+                //     border-radius: 4px;
+                // }
             }
         }
 
         .phone-button {
 
-            a {
-                color: $peak-blue-two;
-                font-weight: 700;
-            }
+            li {
+                margin-right: 1.5rem;
+
+                a {
+                    font-size: 0.875rem;
+                    // font-weight: 700;
+                    // color: $black;
+                    display: inline;  
+                    color: $peak-blue-two;
+                    font-weight: 700; 
+                }
+
+            //     .nav-button {
+            //         background-color: $peak-blue-two;
+            //         color: white;
+            //         padding: .7rem 1rem .7rem 1rem;
+            //         display: inline;
+            //         border-radius: 4px;
+            //     }
+            // }
+
+            // a {
+            //     color: $peak-blue-two;
+            //     font-weight: 700;
+            // }
 
             .nav-button {
                 background-color: $peak-blue-two;
@@ -71,4 +103,4 @@
         }
     }
 }
-
+}

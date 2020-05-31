@@ -76,3 +76,67 @@
         }
     }
 }
+
+.about-pricing {
+    background-color: $peak-light-grey;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .col {
+        display: flex;
+        align-self: center;
+
+        .wrap {
+            max-width: 490px;
+            margin: 0 auto;
+
+            ul {
+                color: $black;
+            }
+
+            .financing-link {
+                color: $peak-blue-two;
+                font-size: 1.5625rem;
+                font-weight: 700;
+                margin-top: 1rem;
+
+                a {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+.branding {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    h2 {
+        margin-bottom: 2.5rem;
+    }
+
+    .brands {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 1rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .add-info {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+.service-areas {
+    padding: 4rem 0 4rem 0;
+    background-color: $peak-light-grey;
+    text-align: center;
+
+    .list-of-areas {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+}

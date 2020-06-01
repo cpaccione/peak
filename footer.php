@@ -18,7 +18,7 @@
 					<div class="schedule-service">
 						<ul>
 							<li><a href="#" class="service-button">schedule service</a></li>
-							<li><a href="#" class="financing-button">Financing Available</a></li>
+							<li><a href="https://beta.apptracker.ftlfinance.com/new/C20069" target="_blank" class="financing-button">Financing Available</a></li>
 						</ul>
 					</div>
 					<div class="footer-menu">
@@ -33,9 +33,9 @@
 					</div>
 					<div class="social-media">
 						<ul>
-							<li><a href="#" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
-							<li><a href="#">Call: 847-510-8302</a></li>
+							<li><a href="https://twitter.com/peakhvacnow/status/1262923357193994240?s=19" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+							<li><a href="https://www.instagram.com/p/B7BVDQlFcQt/?igshid=17e4t4pkeif6t" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
+							<li><a href="tel:+8475108302" target="_blank">Call: 847-510-8302</a></li>
 						</ul>
 					</div>
 				</div>

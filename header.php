@@ -57,9 +57,27 @@
 			);
 			?>
 			<ul class="phone-button">
-				<li><a href="#">847-510-8302</a></li>
-				<li><a href="#" class="nav-button">Schedule Service</a></li>
+				<li><a href="tel:+8475108302">847-510-8302</a></li>
+				<li><a href="/schedule-service" class="nav-button">Schedule Service</a></li>
 			</ul>
 		</nav><!-- #site-navigation -->
+
+		<div class="mobile-menu">
+			<span></span>
+			<!-- <span></span>
+			<span></span> -->
+		</div>
+
+		<div class="mobile-nav">
+		<?php
+			wp_nav_menu(
+				array(
+					'theme_location' => 'menu-1',
+					'menu_id'        => 'primary-menu',
+				)
+			);
+			?>
+		</div>
+		
 	</header><!-- #masthead -->
 	</div>

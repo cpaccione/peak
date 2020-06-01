@@ -27,4 +27,14 @@ jQuery(document).ready(function ($) {
             }
         ]
     });
+
+
+    $('.mobile-menu').click(
+        function() {
+            $('.mobile-menu').toggleClass('rotate-mobile');
+            $('.mobile-nav').toggleClass('show-mobile-nav');
+        }
+    );
+
+
 });

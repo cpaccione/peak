@@ -17,7 +17,7 @@
 				<div class="col">
 					<div class="schedule-service">
 						<ul>
-							<li><a href="#" class="service-button">schedule service</a></li>
+							<li><a href="/schedule-service" class="service-button">schedule service</a></li>
 							<li><a href="https://beta.apptracker.ftlfinance.com/new/C20069" target="_blank" class="financing-button">Financing Available</a></li>
 						</ul>
 					</div>

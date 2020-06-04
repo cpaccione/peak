@@ -39,6 +39,7 @@ Template Name: Maintenance / Installation
 <section class="form-section">
     <div class="col">
         <div class="form">
+            <p>Fill out the form below and we will contact you within XX hours.</p>
             <?php the_field('form'); ?>
         </div>
     </div>

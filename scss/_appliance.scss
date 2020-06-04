@@ -1,0 +1,96 @@
+.appliance-repair {
+    padding: 3rem 0 3rem 0;
+
+    .wrap {
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    p {
+        color: $peak-red;
+        font-weight: 700;
+        font-size: 1.5625rem;
+
+        a {
+            color: $peak-red;
+        }
+    }
+}
+
+.ar {
+    background-color: $peak-light-grey;
+    padding: 5rem 0 4rem 0;
+
+    .ar-info {
+        max-width: 633px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+}
+
+.ar-service-list {
+    background-color: $peak-light-grey;
+
+    .ar-title {
+        padding: 3rem 1rem 2rem 1rem;
+        text-align: center;
+    }
+}
+
+.ar-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+
+    @media(min-width: 800px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .icon-wrap {
+        background-color: $white;
+        padding: 1.5rem;
+
+        p {
+            font-size: 1.125rem;
+            text-align: center;
+            font-weight: 700;
+        }
+        
+        ul {
+            font-size: 18px;
+            text-align: center;
+            font-weight: 300;
+        }
+    }
+
+    .icon {
+        background: $peak-blue-two;
+        max-width: 110px;
+        height: 110px;
+        margin: 0 auto;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .icon-wrap:last-child {
+        background-color: $peak-blue;
+        color: $white;
+        padding: 2.5rem;
+
+        .icon {
+            background-color: transparent;
+            margin: 0 0 auto 0;
+
+        }
+
+        p {
+            margin-top: 1rem;
+            text-align: left;
+        }
+        
+    }
+
+}

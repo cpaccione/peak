@@ -29,7 +29,7 @@ Template Name: About
             </div>
             <div class="col-bottom">
                 <div class="wrap">
-                    <p>We provide same-day appliance repair service, 24/7 and 365 days a year. We service all of Chicago and its surrounding suburbs.  See list of suburbs we service.</p>   
+                    <p>We provide same-day appliance repair service, 24/7 and 365 days a year. We service all of Chicago and its surrounding suburbs.  <a href="#">See list of suburbs we service.</a></p>   
                 </div>
             </div>
         </div>

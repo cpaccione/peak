@@ -80,7 +80,13 @@
 .about-pricing {
     background-color: $peak-light-grey;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    padding: 2rem 0 2rem 0;
+
+    @media (min-width: 1000px) {
+        grid-template-columns: 1fr 1fr;
+        padding: 0;
+    }
 
     .col {
         display: flex;
@@ -89,6 +95,11 @@
         .wrap {
             max-width: 490px;
             margin: 0 auto;
+            padding: 0 1rem 4rem 1rem;
+
+            @media(min-width: 1000px) {
+                padding-bottom: 0;
+            }
 
             ul {
                 color: $black;

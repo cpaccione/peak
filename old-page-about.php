@@ -46,7 +46,7 @@ Template Name: Old
                     <li>$139 for commercial units</li>
                 </ul>
                 <a href="#" class="button">schedule service</a>
-                <p>Financing available! <span><a hre="#">Learn More</a></span></p>          
+                <p>Financing available! <span><a hre="https://beta.apptracker.ftlfinance.com/new/C20069" target="_blank">Learn More</a></span></p>          
             </div>
         </div>
         <div class="col">

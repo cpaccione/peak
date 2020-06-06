@@ -1,0 +1,60 @@
+@import '../../../scss/_vars.scss';
+
+.two-alt {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: $peak-light-grey;
+
+    .col-1 {
+        order: 1;
+    }
+
+    .col-2 {
+        order: 2;
+    }
+
+    .col-3 {
+        order: 4;
+    }
+
+    .col-4 {
+        order: 3;
+    }
+
+    @media (min-width: 800px) {
+        grid-template-columns: 1fr 1fr;
+
+        .col-1 {
+            order: 1;
+        }
+    
+        .col-2 {
+            order: 2;
+        }
+    
+        .col-3 {
+            order: 3;
+        }
+    
+        .col-4 {
+            order: 4;
+        }
+    }
+
+    .col {
+        display: flex;
+        align-self: center;
+        flex-direction: column;
+
+
+        .wrap {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 2rem 1.5rem;
+            
+            @media (min-width: 800px) {
+                padding: 0 1.5rem 0 1.5rem;
+            }
+        }
+    }
+}

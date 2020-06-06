@@ -155,4 +155,51 @@ function register_acf_block_types() {
             
         ));
 
+        // register CTA block
+        acf_register_block_type(array(
+            'name'              => 'cta_block',
+            'title'             => __('CTA'),
+            'description'       => __('This block adds a CTA with title, text, and button.'),
+            'render_template'   => '/template-parts/blocks/cta_block/cta_block.php',
+            'enqueue_assets'    => function() {
+                wp_enqueue_style( 'cta-block', get_template_directory_uri() . '/template-parts/blocks/cta_block/cta_block.css', array(), '1.0', 'all' );
+            },
+            'category'          => 'common',
+            'post_types'        => array('page'),
+            // 'icon'              => 'admin-comments',
+            'icon' => array(
+                // Specifying a background color to appear with the icon e.g.: in the inserter.
+                'background' => '#00A1ED',
+                // Specifying a color for the icon (optional: if not set, a readable color will be automatically defined)
+                'foreground' => '#ffffff',
+                // Specifying a dashicon for the block
+                'src' => 'admin-comments',
+                ),
+            'keywords'          => array( 'Peak', 'CTA' ),
+            
+        ));
+
+        // register Col Alt
+        acf_register_block_type(array(
+            'name'              => 'col_alt',
+            'title'             => __('Col Alt'),
+            'description'       => __('This block adds two rows of columns with alternating images.'),
+            'render_template'   => 'template-parts/blocks/col_alt/col_alt.php',
+            'enqueue_assets'    => function() {
+                wp_enqueue_style( 'col-alt', get_template_directory_uri() . '/template-parts/blocks/col_alt/col_alt.css', array(), '1.0', 'all' );
+            },
+            'category'          => 'common',
+            'post_types'        => array('page'),
+            // 'icon'              => 'admin-comments',
+            'icon' => array(
+                // Specifying a background color to appear with the icon e.g.: in the inserter.
+                'background' => '#00A1ED',
+                // Specifying a color for the icon (optional: if not set, a readable color will be automatically defined)
+                'foreground' => '#ffffff',
+                // Specifying a dashicon for the block
+                'src' => 'admin-comments',
+                ),
+            'keywords'          => array( 'Peak', 'Column', 'Alt' ),
+            
+        ));
 }

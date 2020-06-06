@@ -1,0 +1,18 @@
+.questions {
+  display: flex;
+  align-items: center;
+  height: auto;
+  padding: 2rem 0 2rem 0; }
+  @media (min-width: 600px) {
+    .questions {
+      height: 352px; } }
+  .questions .wrap {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center; }
+    .questions .wrap h2 {
+      margin-bottom: .5rem; }
+    .questions .wrap p {
+      margin-bottom: 2rem; }
+
+/*# sourceMappingURL=cta_block.css.map */

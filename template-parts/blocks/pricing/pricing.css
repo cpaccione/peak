@@ -1,0 +1,35 @@
+.pricing {
+  background-color: #006B9D;
+  color: #ffffff;
+  padding: 3.375rem 1.5rem 3.75rem 1.5rem; }
+  .pricing .pricing-wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    max-width: 623px;
+    margin: 0 auto; }
+    .pricing .pricing-wrap img {
+      margin-bottom: 1rem; }
+    @media (min-width: 600px) {
+      .pricing .pricing-wrap {
+        grid-template-columns: 1fr 3fr;
+        text-align: left; } }
+    .pricing .pricing-wrap h2 {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      color: #ffffff; }
+    .pricing .pricing-wrap p {
+      font-size: 1.25rem; }
+    .pricing .pricing-wrap ul {
+      list-style: none;
+      font-size: 1.25rem;
+      font-weight: 700;
+      padding: 0;
+      margin: 0 0 2rem 0; }
+  .pricing .line {
+    background-color: #ffffff;
+    height: 1px;
+    max-width: 700px;
+    margin: 0 auto 2rem auto; }
+
+/*# sourceMappingURL=pricing.css.map */

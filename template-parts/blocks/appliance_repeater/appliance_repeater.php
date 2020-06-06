@@ -10,13 +10,13 @@
  */
 
 // Create id attribute allowing for custom "anchor" value.
-$id = 'appliance-repeater-' . $block['id'];
+$id = 'home-services-' . $block['id'];
 if( !empty($block['anchor']) ) {
     $id = $block['anchor'];
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
-$className = 'appliance-repeater';
+$className = 'home-services';
 if( !empty($block['className']) ) {
     $className .= ' ' . $block['className'];
 }
@@ -27,64 +27,34 @@ if( !empty($block['align']) ) {
 // Load values and assign defaults.
 $title = get_field('appliance_title');
 $sub_title = get_field('appliance_sub_title');
-$text_color = get_field('');
 $link = get_field('link');
 
 ?>
 <div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
-<div class="home-services">
+
         <div class="container-1000">
             <h2><?php echo $title; ?></h2>
             <p><?php echo $sub_title; ?></p>
 
-            <div class="service-grid">
 
-                <div class="icon-wrap">
-                    <a id="contact-modal" href="javascript:;">
-                    <div class="icon">
-                        <img src="<?php echo esc_url(get_template_directory_uri() );?>/images/temp_icon.svg" alt="icon">
-                    </div>
-                    <p>Water Heater</p>
-                    </a>
-                </div>
-            </div>
-
-            <?php if( have_rows('repeater_field_name') ): ?>
+            <?php if( have_rows('appliance_repeater') ): ?>
 
                 <div class="service-grid">
 
-                <?php while( have_rows('repeater_field_name') ): the_row(); 
+                <?php while( have_rows('appliance_repeater') ): the_row(); 
 
                     // vars
+                    $service = get_sub_field('service');
                     $image = get_sub_field('image');
-                    $content = get_sub_field('content');
-                    $link = get_sub_field('link');
+
 
                     ?>
 
-                    <li class="slide">
-
-                        <?php if( $link ): ?>
-                            <a href="<?php echo $link; ?>">
-                        <?php endif; ?>
-
-                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
-
-                        <?php if( $link ): ?>
-                            </a>
-                        <?php endif; ?>
-
-                        <?php echo $content; ?>
-
-                    </li>
-
                     <div class="icon-wrap">
-                        <a id="contact-modal" href="javascript:;">
                         <div class="icon">
-                            <img src="<?php echo esc_url(get_template_directory_uri() );?>/images/temp_icon.svg" alt="icon">
+                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
                         </div>
-                        <p>Water Heater</p>
-                        </a>
+                        <p><?php echo $service; ?></p>
                     </div>
 
                 <?php endwhile; ?>
@@ -106,6 +76,5 @@ $link = get_field('link');
 
             <?php endif; ?>
 
-        </div>
     </div>
 </div>

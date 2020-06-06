@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,aAAc,CACV,gBAAgB,CCER,OAAO,CDDf,OAAO,CAAE,mBAAmB,CAO5B,yBAA0B,CAT9B,aAAc,CAUN,OAAO,CAAE,mBAAmB,EAIhC,wBAAW,CACP,SAAS,CAAE,KAAK,CAChB,MAAM,CAAE,MAAM,CACd,UAAU,CAAE,MAAM,CAOlB,2BAAG,CACC,SAAS,CAAE,IAAI,CACf,cAAc,CAAE,OAAO,CACvB,KAAK,CC7BR,IAAO,CDgCR,0BAAE,CACE,KAAK,CCjCR,IAAO",
+"sources": ["quote_slider.scss","../../../../scss/_vars.scss"],
+"names": [],
+"file": "quote_slider.css"
+}

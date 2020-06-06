@@ -202,4 +202,36 @@ function register_acf_block_types() {
             'keywords'          => array( 'Peak', 'Column', 'Alt' ),
             
         ));
+
+        // Registering Quote block for slick slider
+        acf_register_block_type(array(
+            'name'              => 'quote_slider',
+            'title'             =>  __('Quote Slider'),
+            'description'       =>  __('The block adds a quote slider.'),
+            'render_template'   =>  'template-parts/blocks/sliders/quote_slider/quote_slider.php',
+            'enqueue_assets'    => function() {
+                wp_enqueue_style( 'quote-slider-slick', get_template_directory_uri() . '/slick-1.8.1/slick/slick.css', array(), '1.0' );
+
+                wp_enqueue_style( 'quote-slider-slick-theme', get_template_directory_uri() . '/slick-1.8.1/slick/slick-theme.css', array(), '1.0' );
+
+                wp_enqueue_style( 'test-slider-styles', get_template_directory_uri() . '/template-parts/blocks/sliders/quote_slider/quote_slider.css', array(), '1.0' );
+
+                wp_enqueue_script( 'slick-js', get_template_directory_uri() . '/slick-1.8.1/slick/slick.js', array('jquery'), '1.0', true ); 
+
+                wp_enqueue_script( 'quote-slider-js', get_template_directory_uri() . '/template-parts/blocks/sliders/quote_slider/quote_slider.js', array('jquery'), '1.0', true );
+            },
+            'category'          =>  __('layout'),
+            'mode'              => 'auto',
+            'post_types'        => array('page'),
+            'icon' => array(
+                // Specifying a background color to appear with the icon e.g.: in the inserter.
+                'background' => '#00A1ED',
+                // Specifying a color for the icon (optional: if not set, a readable color will be automatically defined)
+                'foreground' => '#ffffff',
+                // Specifying a dashicon for the block
+                'src' => 'screenoptions',
+              ),
+            'keywords'          => array( 'peak', 'slider', 'quote' ),
+
+        ));
 }

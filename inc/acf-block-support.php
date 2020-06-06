@@ -83,7 +83,7 @@ function register_acf_block_types() {
             
         ));
 
-                // register a two column block
+        // register a two column block
         acf_register_block_type(array(
             'name'              => 'hero_with_image',
             'title'             => __('Hero with image'),
@@ -104,6 +104,30 @@ function register_acf_block_types() {
                 'src' => 'admin-comments',
                 ),
             'keywords'          => array( 'Peak', 'Hero with image' ),
+            
+        ));
+
+        // register a two column block
+        acf_register_block_type(array(
+            'name'              => 'appliance_repeater',
+            'title'             => __('Appliance Repeater'),
+            'description'       => __('The block adds a Section title, sub-title, appliance icons and a call to action.'),
+            'render_template'   => 'template-parts/blocks/appliance_repeater/appliance_repeater.php',
+            'enqueue_assets'    => function() {
+                wp_enqueue_style( 'hero_with_image', get_template_directory_uri() . '/template-parts/blocks/appliance_repeater/appliance_repeater.css', array(), '1.0', 'all' );
+            },
+            'category'          => 'common',
+            'post_types'        => array('page'),
+            // 'icon'              => 'admin-comments',
+            'icon' => array(
+                // Specifying a background color to appear with the icon e.g.: in the inserter.
+                'background' => '#00A1ED',
+                // Specifying a color for the icon (optional: if not set, a readable color will be automatically defined)
+                'foreground' => '#ffffff',
+                // Specifying a dashicon for the block
+                'src' => 'admin-comments',
+                ),
+            'keywords'          => array( 'Peak', 'Appliances', 'Icons' ),
             
         ));
 

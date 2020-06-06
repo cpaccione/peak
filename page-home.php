@@ -29,10 +29,12 @@ Template Name: Peak Home
 
             <div class="service-grid">
                 <div class="icon-wrap">
+                    <a id="contact-modal" href="javascript:;">
                     <div class="icon">
                         <img src="<?php echo esc_url(get_template_directory_uri() );?>/images/temp_icon.svg" alt="icon">
                     </div>
                     <p>Water Heater</p>
+                    </a>
                 </div>
 
                 <div class="icon-wrap">
@@ -142,20 +144,32 @@ Template Name: Peak Home
             <div class="testimonial-slider">
                 <div>
                     <div class="test-wrap">
-                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h2>
-                    <p>- Jane Doe, Chicago</p>                
+                    <h2>A friend of mine needed his AC unit repair so he could sell his condo. i called Peak and they were able to come and give him an estimate for the repairs. because it was a old unit they also recommended that he replace it because it would be more cost effective that way. They recommended a new unit and installed. My friend was grateful especially since it was the summer and he has small children. I would definitely recommend. them.</h2>
+                    <p>- Dame Haze</p>                
                     </div>
                 </div>
                 <div>
                     <div class="test-wrap">
-                        <h2>There are five pups. One for each of the Stark children. The direwolf is the sigil of your house. They were meant to have them.</h2>
-                        <p>- Jon Snow, Winterfell</p>            
+                        <h2>I was surprised by how fast they work. I needed my compressor on my fridge replace. He was able to find one that match my fridge. He even recommended ways for me to keep the items in my freezer cold while he located the part the same day! I highly recommend.</h2>
+                        <p>- Jason Mark</p>            
                     </div>
                 </div>
                 <div>
                     <div class="test-wrap">
-                        <h2>I have a realistic grasp of my own strengths and weaknesses. My mind is my weapon. My brother has his sword, King Robert has his warhammer, and I have my mind… and a mind needs books as a sword needs a whetstone, if it is to keep its edge. That’s why I read so much, Jon Snow.</h2>
-                        <p>- Tyrion Lannister, King's Landing</p>
+                        <h2>I’ve used Peak Heating for two large projects (A/C installation and for mini split installation in my basement).  I was pleased with both jobs and the follow-up care that I got. The responsiveness of this establishment is excellent. I highly recommend them not only for large projects, but for anything on the HVAC spectrum.</h2>
+                        <p>- Therese H.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="test-wrap">
+                        <h2>My family and I have had the opportunity to work with these guys several time over the years. They are reliable and efficient. If you want it done and done right call Peak Heating, cooling...</h2>
+                        <p>- Mervin Brown</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="test-wrap">
+                        <h2>Peak heating and cooling is the place to go, their prices are super reliable for the outstanding work they do. I would highly recommend them.</h2>
+                        <p>- Maria Alba</p>
                     </div>
                 </div>
             </div>

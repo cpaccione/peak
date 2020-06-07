@@ -114,7 +114,7 @@ function register_acf_block_types() {
             'description'       => __('The block adds a Section title, sub-title, appliance icons and a call to action.'),
             'render_template'   => 'template-parts/blocks/appliance_repeater/appliance_repeater.php',
             'enqueue_assets'    => function() {
-                wp_enqueue_style( 'appliance-repeater', get_template_directory_uri() . '/template-parts/blocks/appliance_repeater/appliance_repeater.css', array(), '1.0', 'all' );
+                wp_enqueue_style( 'appliance-repeater', get_template_directory_uri() . '/template-parts/blocks/appliance_repeater/appliance_repeater.css', array(), '1.1', 'all' );
             },
             'category'          => 'common',
             'post_types'        => array('page'),

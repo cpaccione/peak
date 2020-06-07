@@ -90,7 +90,7 @@ function register_acf_block_types() {
             'description'       => __('The block displays text in hero with a background image on the right.'),
             'render_template'   => 'template-parts/blocks/hero_with_image/hero_with_image.php',
             'enqueue_assets'    => function() {
-                wp_enqueue_style( 'hero_with_image', get_template_directory_uri() . '/template-parts/blocks/hero_with_image/hero_with_image.css', array(), '1.0', 'all' );
+                wp_enqueue_style( 'hero_with_image', get_template_directory_uri() . '/template-parts/blocks/hero_with_image/hero_with_image.css', array(), '1.1', 'all' );
             },
             'category'          => 'common',
             'post_types'        => array('page'),

@@ -31,7 +31,7 @@ $image_one = get_field('image_one');
 $link_one = get_field('link_one');
 $title_two = get_field('title_two');
 $editor_two = get_field('editor_two');
-$image_one = get_field('image_two');
+$image_two = get_field('image_two');
 $link_two = get_field('link_two');
 
 ?>

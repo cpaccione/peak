@@ -44,7 +44,7 @@ if( !empty($block['align']) ) {
                 <div>
                     <div class="test-wrap">
                         <h2><?php echo $quote; ?></h2>
-                        <p><?php echo $source; ?></p>
+                        <p>- <?php echo $source; ?></p>
                     </div>
                 </div>
 

@@ -50,11 +50,11 @@ $link = get_field('link');
 
                     ?>
 
-                        <div class="icon-wrap" id="modal-button">
+                        <div class="icon-wrap modal-button">
                             <div class="icon">
-                                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+                                <img class="appliance-icon" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
                             </div>
-                            <p><?php echo $service; ?></p>
+                            <p class="appliance-icon-title"><?php echo $service; ?></p>
                         </div>
                     
 
@@ -86,7 +86,17 @@ $link = get_field('link');
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
+    <div class="modal-icon-wrap">
+        <div class="modal-icon">
+            <img class="modal-app-icon" src="" alt="Peak Icon">
+        </div>
+        <p class="modal-icon-name"></p>
+        <p class="intro-text">We service all major brand residential and commercial refrigerators including bottom freezers, side-by-side, and top freezer.</p>
+        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/modal_brands.svg" alt="Peak Brands">
+        <p class="small-text">Don’t see your brand? No worries, contact us and we’ll see if we can service your appliance.</p>
+        <hr>
+        <a class="button" href="/schedule-service">Schedule Service</a>
+    </div>
   </div>
 
 </div>
@@ -97,45 +107,40 @@ $link = get_field('link');
 
 ( function( $ ) {
 
-  const appButton = $('#modal-button');
-  const appModal = $('#myModal');
+  const $appButton = $('.modal-button');
+  const $appModal = $('.modal');
+  const $closeButton = $('.close');
+  const $modalContent = $('.modal-content');
 
-  $($appButton).on('click', function(e) {
-    // console.log( $(this).text() );
-    e.preventDefault()
+  $($appButton).click(function(e) {
+    e.preventDefault();
     $($appModal).addClass('modal-show');
-    // const title = e.target.closest('.content-event').children[1].innerText
+        const image = $(this).closest('.icon-wrap').find('img.appliance-icon').attr('src');
+        const title = $(this).closest('.icon-wrap').find('p.appliance-icon-title').context.innerText;
+        console.log('.modal-icon-name');
     // const target = e.target.closest('.content-event').children[0].innerText.replace(/\n/g, " | ")
     // // console.log(title, target);
-    // $('#event-date').val(target);
+    $('.modal-app-icon').attr('src', image);
+    $('.modal-icon-name').text(title);
     // $('#event').val(title);
   });
 
 } )( jQuery );
 
-    // Get the modal
-var modal = document.getElementById("myModal");
 
-// Get the button that opens the modal
-var btn = document.querySelector(".myBtn");
+const modal = document.querySelector('#myModal')
+const modalCloseButton = document.querySelector('.close')
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+if(modal) {
 
-// When the user clicks on the button, open the modal
-// btn.onclick = function() {
-//   modal.style.display = "block";
-// }
+modal.addEventListener('click', function(e) {
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  if( e.target == modal ) {
+    modal.classList.remove('modal-show')
+  } else if ( e.target == modalCloseButton ) {
+    modal.classList.remove('modal-show')
   }
+
+})
 }
 </script>

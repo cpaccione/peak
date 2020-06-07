@@ -50,7 +50,7 @@ $link = get_field('link');
 
                     ?>
 
-                        <div class="icon-wrap myBtn">
+                        <div class="icon-wrap" id="modal-button">
                             <div class="icon">
                                 <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
                             </div>
@@ -94,6 +94,25 @@ $link = get_field('link');
 
 <script>
 
+
+( function( $ ) {
+
+  const appButton = $('#modal-button');
+  const appModal = $('#myModal');
+
+  $($appButton).on('click', function(e) {
+    // console.log( $(this).text() );
+    e.preventDefault()
+    $($appModal).addClass('modal-show');
+    // const title = e.target.closest('.content-event').children[1].innerText
+    // const target = e.target.closest('.content-event').children[0].innerText.replace(/\n/g, " | ")
+    // // console.log(title, target);
+    // $('#event-date').val(target);
+    // $('#event').val(title);
+  });
+
+} )( jQuery );
+
     // Get the modal
 var modal = document.getElementById("myModal");
 
@@ -104,9 +123,9 @@ var btn = document.querySelector(".myBtn");
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
+// btn.onclick = function() {
+//   modal.style.display = "block";
+// }
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {

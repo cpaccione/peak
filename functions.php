@@ -202,3 +202,17 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**
+ * Gutenberg scripts and styles
+ * @link https://www.billerickson.net/block-styles-in-gutenberg/
+ */
+function be_gutenberg_scripts() {
+
+	wp_enqueue_script(
+		'be-editor', 
+		get_stylesheet_directory_uri() . '/js/blocks.js', 
+		array( 'wp-blocks', 'wp-dom-ready', 'wp-edit-post' ), 
+		filemtime( get_stylesheet_directory() . '/js/blocks.js' )
+	);
+}
+add_action( 'enqueue_block_editor_assets', 'be_gutenberg_scripts' );

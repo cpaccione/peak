@@ -267,4 +267,30 @@ function register_acf_block_types() {
             'keywords'          => array( 'Peak', 'Logos', 'Brands', 'repeater' ),
             
         ));
+
+
+        // Main Hero Block
+        acf_register_block_type(array(
+            'name'              => 'main_hero',
+            'title'             => __('Main Hero Block'),
+            'description'       => __('This block adds a hero with text and a CTA and two background images'),
+            'render_template'   => 'template-parts/blocks/main_hero/main-hero.php',
+            'enqueue_assets'    => function() {
+                wp_enqueue_style( 'main-hero-block', get_template_directory_uri() . '/template-parts/blocks/main_hero/main-hero.css', array(), '1.0', 'all' );
+            },
+            'mode'              => 'auto',
+            'category'          => 'common',
+            'post_types'        => array('page'),
+            // 'icon'              => 'admin-comments',
+            'icon' => array(
+                // Specifying a background color to appear with the icon e.g.: in the inserter.
+                'background' => '#00A1ED',
+                // Specifying a color for the icon (optional: if not set, a readable color will be automatically defined)
+                'foreground' => '#ffffff',
+                // Specifying a dashicon for the block
+                'src' => 'admin-comments',
+                ),
+            'keywords'          => array( 'Peak', 'Main Hero' ),
+            
+        ));
 }

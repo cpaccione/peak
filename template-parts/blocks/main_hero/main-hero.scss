@@ -1,0 +1,15 @@
+@import '../../../scss/vars';
+@import '../../../scss/containers';
+
+.main-hero {
+    background-color: $peak-blue-two;
+    color: $white;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+
+    @media (max-width: 960px) {
+        background-image: none !important;
+
+    }
+}

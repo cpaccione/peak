@@ -67,9 +67,13 @@
 
         .footer-menu {
             ul {
-                display: flex;
+                display: block;
                 list-style: none;
                 padding: 0;
+
+                @media(min-width: 800px) {
+                    display: flex;
+                }
 
                 li {
                     margin-right: 1rem;

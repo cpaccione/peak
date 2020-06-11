@@ -28,16 +28,18 @@ if( !empty($block['align']) ) {
 $title = get_field('title');
 $sub_head = get_field('sub-head');
 $body = get_field('body');
+$hero_featured = get_field('hero_featured');
+$bg = get_field('background_image');
 
 ?>
-<div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
+<div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>" style="background-image: url('<?php echo $bg; ?>');">
     <div class="container">
         <div class="hero-with-image">
             <div class="hwi">
                 <div class="wrap">
                     <h2><?php echo $title; ?></h2>
 
-                    <p><?php echo $sub_head; ?></p>
+                    <p style="font-weight: bold;"><?php echo $sub_head; ?></p>
                     <p><?php echo $body; ?></p>
 
                         <?php 
@@ -56,4 +58,5 @@ $body = get_field('body');
             </div>
         </div>
     </div>
+    <img class="hero-featured" src="<?php echo $hero_featured['url']; ?>" alt="<?php echo $hero_featured['alt']; ?>">
 </div>

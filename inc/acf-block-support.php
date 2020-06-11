@@ -278,7 +278,7 @@ function register_acf_block_types() {
             'enqueue_assets'    => function() {
                 wp_enqueue_style( 'main-hero-block', get_template_directory_uri() . '/template-parts/blocks/main_hero/main-hero.css', array(), '1.0', 'all' );
             },
-            'mode'              => 'auto',
+            'mode'              => 'edit',
             'category'          => 'common',
             'post_types'        => array('page'),
             // 'icon'              => 'admin-comments',

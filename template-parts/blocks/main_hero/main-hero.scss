@@ -2,6 +2,7 @@
 @import '../../../scss/containers';
 
 .main-hero {
+	position: relative;
     background-color: $peak-blue-two;
     color: $white;
     background-size: contain;
@@ -11,5 +12,12 @@
     @media (max-width: 960px) {
         background-image: none !important;
 
+    }
+
+    .hero-featured {
+    	width: 422px;
+    	position: absolute;
+    	top: 0;
+    	right: 0;
     }
 }

@@ -18,7 +18,7 @@
 					<div class="schedule-service">
 						<ul>
 							<li><a href="/schedule-service" class="service-button">schedule service</a></li>
-							<li><a href="https://beta.apptracker.ftlfinance.com/new/C20069" target="_blank" class="financing-button">Financing Available</a></li>
+							<li><a href="/financing" class="financing-button">Financing Available</a></li>
 						</ul>
 					</div>
 					<div class="footer-menu">
@@ -42,8 +42,8 @@
 				<div class="col">
 					<div class="footer-logos">
 						<ul>
-							<li><a href="#"><img class="authorized-dealer-logo" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/factory_authorized_dealer@2x@2x.png" alt=""></a></li>
-							<li><a href="#"><img class="footer-logo" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/peak-logo@2x.png" alt=""></a></li>
+							<li><img class="authorized-dealer-logo" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/factory_authorized_dealer@2x@2x.png" alt="Authorize Image Dealer"></li>
+							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="footer-logo" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/peak-logo@2x.png" alt=""></a></li>
 						</ul>
 					</div>
 				</div>	

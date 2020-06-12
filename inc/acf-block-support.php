@@ -276,7 +276,7 @@ function register_acf_block_types() {
             'description'       => __('This block adds a hero with text and a CTA and two background images'),
             'render_template'   => 'template-parts/blocks/main_hero/main-hero.php',
             'enqueue_assets'    => function() {
-                wp_enqueue_style( 'main-hero-block', get_template_directory_uri() . '/template-parts/blocks/main_hero/main-hero.css', array(), '1.0', 'all' );
+                wp_enqueue_style( 'main-hero-block', get_template_directory_uri() . '/template-parts/blocks/main_hero/main-hero.css', array(), '1.1', 'all' );
             },
             'mode'              => 'edit',
             'category'          => 'common',
@@ -293,4 +293,5 @@ function register_acf_block_types() {
             'keywords'          => array( 'Peak', 'Main Hero' ),
             
         ));
+
 }

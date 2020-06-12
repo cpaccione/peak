@@ -36,34 +36,34 @@ Template Name: Maintenance / Installation
     </section>
 
     <div class="container">
-<section class="form-section">
-    <div class="col">
-        <div class="form">
-            <p>Fill out the form below and we will contact you within XX hours.</p>
-            <?php the_field('form'); ?>
-        </div>
-    </div>
-    <div class="col">
-        <div class="contact-info">
-            <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/images/peak-contact-logo.svg" alt="Peak Heating Cooling Refrigeration">
-            <ul>
-                <li><span>Hours:</span></li>
-                <li>Monday - Saturday 8 am - 9 pm</li>
-                <li>Sundays 8 am - 3 pm</li>
-            </ul>
+        <section class="form-section">
+            <div class="col">
+                <div class="form">
+                    <p>Fill out the form below and we will contact you within XX hours.</p>
+                    <?php the_field('form'); ?>
+                </div>
+            </div>
+            <div class="col">
+                <div class="contact-info">
+                    <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/images/peak-contact-logo.svg" alt="Peak Heating Cooling Refrigeration">
+                    <ul>
+                        <li><span>Hours:</span></li>
+                        <li>Monday - Saturday 8 am - 9 pm</li>
+                        <li>Sundays 8 am - 3 pm</li>
+                    </ul>
 
-            <ul>
-                <li><span>Phone:</span></li>
-                <li>847-510-8302</li>
-            </ul>
+                    <ul>
+                        <li><span>Phone:</span></li>
+                        <li>847-510-8302</li>
+                    </ul>
 
-            <ul>
-                <li><span>Location:</span></li>
-                <li>Chicago, IL</li>
-            </ul>
-        </div>
-    </div>
-</section>
+                    <ul>
+                        <li><span>Location:</span></li>
+                        <li>Chicago, IL</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </div>
 
 

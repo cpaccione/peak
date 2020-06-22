@@ -1,0 +1,21 @@
+@import '../../../scss/vars';
+
+.appliance-repair {
+    padding: 3rem 0 3rem 0;
+
+    .wrap {
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    p {
+        color: $peak-red;
+        font-weight: 700;
+        font-size: 1.5625rem;
+
+        a {
+            color: $peak-red;
+        }
+    }
+}

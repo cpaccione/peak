@@ -1,0 +1,18 @@
+.appliance-repair {
+  padding: 3rem 0 3rem 0;
+}
+.appliance-repair .wrap {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+.appliance-repair p {
+  color: #E50019;
+  font-weight: 700;
+  font-size: 1.5625rem;
+}
+.appliance-repair p a {
+  color: #E50019;
+}
+
+/*# sourceMappingURL=red_text.css.map */

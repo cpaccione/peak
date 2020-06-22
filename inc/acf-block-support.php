@@ -294,4 +294,29 @@ function register_acf_block_types() {
             
         ));
 
+        // Red Text Block
+        acf_register_block_type(array(
+            'name'              => 'red_text',
+            'title'             => __('Red Text Block'),
+            'description'       => __('This block adds a red text full width block with white background'),
+            'render_template'   => 'template-parts/blocks/red_text/red-text.php',
+            'enqueue_assets'    => function() {
+                wp_enqueue_style( 'red-text-block', get_template_directory_uri() . '/template-parts/blocks/red_text/red_text.css', array(), '1.1', 'all' );
+            },
+            'mode'              => 'edit',
+            'category'          => 'common',
+            'post_types'        => array('page'),
+            // 'icon'              => 'admin-comments',
+            'icon' => array(
+                // Specifying a background color to appear with the icon e.g.: in the inserter.
+                'background' => '#00A1ED',
+                // Specifying a color for the icon (optional: if not set, a readable color will be automatically defined)
+                'foreground' => '#ffffff',
+                // Specifying a dashicon for the block
+                'src' => 'admin-comments',
+                ),
+            'keywords'          => array( 'Peak', 'Red Text' ),
+            
+        ));
+
 }

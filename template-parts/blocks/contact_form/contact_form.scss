@@ -1,0 +1,37 @@
+@import '../../../scss/_vars.scss';
+
+#form {
+    background-color: $peak-light-grey;
+    padding: 30px;
+
+    h1 {
+        color: $peak-blue-two;
+    }
+
+    input[type="submit"] {
+        background-color: $peak-red;
+        color: white;
+        padding: 15px;
+        font-weight: bolder;
+        border-radius: 5px;
+        width: 100px !important;
+        margin-top: 30px;
+    }
+
+    p {
+        width: calc(100%);
+        margin-bottom: 0px;
+
+        label, span, input {
+            width: 100%;
+        }
+
+        label span {
+            color: $peak-red;
+
+            input, textarea {
+                border: 0px;
+            }
+        }
+    }
+}

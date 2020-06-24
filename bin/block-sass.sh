@@ -22,7 +22,7 @@ for dir in ${BLOCK_DIRS[@]}; do
         path="$dir$fileName.scss:$dir$fileName.css"    
         BLOCK_SCSS_PATHS+=" $path"
  
-        echo $path
+        echo $dir
     fi
 done
 

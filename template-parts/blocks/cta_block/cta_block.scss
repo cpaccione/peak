@@ -1,3 +1,5 @@
+@import '../../../scss/vars';
+
 .questions {
     display: flex;
     align-items: center;
@@ -20,5 +22,18 @@
         p {
             margin-bottom: 2rem;
         }
+    }
+}
+
+.questions.colored {
+    background-color: $peak-blue;
+
+    h2, p {
+        color: white;
+    }
+
+    a {
+        background-color: $peak-red;
+        color: white;
     }
 }

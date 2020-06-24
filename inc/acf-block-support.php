@@ -274,9 +274,9 @@ function register_acf_block_types() {
             'name'              => 'main_hero',
             'title'             => __('Main Hero Block'),
             'description'       => __('This block adds a hero with text and a CTA and two background images'),
-            'render_template'   => 'template-parts/blocks/main_hero/main-hero.php',
+            'render_template'   => 'template-parts/blocks/main_hero/main_hero.php',
             'enqueue_assets'    => function() {
-                wp_enqueue_style( 'main-hero-block', get_template_directory_uri() . '/template-parts/blocks/main_hero/main-hero.css', array(), '1.1', 'all' );
+                wp_enqueue_style( 'main-hero-block', get_template_directory_uri() . '/template-parts/blocks/main_hero/main_hero.css', array(), '1.1', 'all' );
             },
             'mode'              => 'edit',
             'category'          => 'common',
@@ -316,6 +316,56 @@ function register_acf_block_types() {
                 'src' => 'admin-comments',
                 ),
             'keywords'          => array( 'Peak', 'Red Text' ),
+            
+        ));
+
+        // Contact Form Block
+        acf_register_block_type(array(
+            'name'              => 'contact_form',
+            'title'             => __('Contact Form Block'),
+            'description'       => __('This block adds a contact form'),
+            'render_template'   => 'template-parts/blocks/contact_form/contact_form.php',
+            'enqueue_assets'    => function() {
+                wp_enqueue_style( 'contact_form_block', get_template_directory_uri() . '/template-parts/blocks/contact_form/contact_form.css', array(), '1.1', 'all' );
+            },
+            'mode'              => 'edit',
+            'category'          => 'common',
+            'post_types'        => array('page'),
+            // 'icon'              => 'admin-comments',
+            'icon' => array(
+                // Specifying a background color to appear with the icon e.g.: in the inserter.
+                'background' => '#00A1ED',
+                // Specifying a color for the icon (optional: if not set, a readable color will be automatically defined)
+                'foreground' => '#ffffff',
+                // Specifying a dashicon for the block
+                'src' => 'admin-comments',
+                ),
+            'keywords'          => array( 'Peak', 'Contact Form' ),
+            
+        ));
+
+        // Contact Graphic Block
+        acf_register_block_type(array(
+            'name'              => 'contact_graphic',
+            'title'             => __('Contact Graphic Block'),
+            'description'       => __('This block adds a peak logo graphic with contact details below'),
+            'render_template'   => 'template-parts/blocks/contact_graphic/contact_graphic.php',
+            'enqueue_assets'    => function() {
+                wp_enqueue_style( 'contact_graphic-block', get_template_directory_uri() . '/template-parts/blocks/contact_graphic/contact_graphic.css', array(), '1.1', 'all' );
+            },
+            'mode'              => 'edit',
+            'category'          => 'common',
+            'post_types'        => array('page'),
+            // 'icon'              => 'admin-comments',
+            'icon' => array(
+                // Specifying a background color to appear with the icon e.g.: in the inserter.
+                'background' => '#00A1ED',
+                // Specifying a color for the icon (optional: if not set, a readable color will be automatically defined)
+                'foreground' => '#ffffff',
+                // Specifying a dashicon for the block
+                'src' => 'admin-comments',
+                ),
+            'keywords'          => array( 'Peak', 'Contact Graphic' ),
             
         ));
 

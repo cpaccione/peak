@@ -1,0 +1,68 @@
+.container-1000 {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem 0 1rem;
+}
+
+.is-style-container-1000 {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem 0 1rem;
+}
+
+.is-style-container-700 {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 1rem 0 1rem;
+}
+
+.wp-block-group {
+  padding: 0 1rem 0 1rem;
+}
+
+@media (min-width: 782px) {
+  .wp-block-column:not(:first-child) {
+    margin-left: 4rem;
+  }
+}
+.main-hero {
+  position: relative;
+  background-color: #00A1ED;
+  color: #ffffff;
+}
+@media (max-width: 960px) {
+  .main-hero {
+    background-image: none !important;
+  }
+}
+.main-hero .container-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: calc(100% - 442px);
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+  opacity: 0.25;
+  filter: grayscale(100%);
+}
+.main-hero .hero-featured {
+  width: 422px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+}
+.main-hero .container {
+  z-index: 3;
+  position: relative;
+}
+
+/*# sourceMappingURL=main_hero.css.map */

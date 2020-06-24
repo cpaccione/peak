@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Appliance Repeater Block Template.
  *
@@ -28,7 +27,6 @@ if( !empty($block['align']) ) {
 $title = get_field('title');
 $copy = get_field('copy');
 $link = get_field('link');
-
 ?>
 
 <div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">

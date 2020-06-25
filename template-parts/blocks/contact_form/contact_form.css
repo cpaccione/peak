@@ -3,7 +3,8 @@
   padding: 30px;
 }
 #form h1 {
-  color: #00A1ED;
+  color: #006B9D;
+  text-transform: uppercase;
 }
 #form input[type=submit] {
   background-color: #E50019;

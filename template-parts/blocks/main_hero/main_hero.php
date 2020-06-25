@@ -58,5 +58,5 @@ $bg = get_field('background_image');
             </div>
         </div>
     </div>
-    <img class="hero-featured" src="<?php echo $hero_featured['url']; ?>" alt="<?php echo $hero_featured['alt']; ?>">
+    <div class="hero-featured" style="background-image: url('<?php echo $hero_featured['url']; ?>')" alt="<?php echo $hero_featured['alt']; ?>"></div>
 </div>

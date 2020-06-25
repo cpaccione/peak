@@ -1,2 +1,44 @@
-.about-pricing{background-color:#F0F0F0;display:grid;grid-template-columns:1fr;padding:2rem 0 2rem 0}@media (min-width: 1000px){.about-pricing{grid-template-columns:1fr 1fr;padding:0}}.about-pricing .col{display:flex;align-self:center}.about-pricing .col .wrap{max-width:490px;margin:0 auto;padding:0 1rem 4rem 1rem}@media (min-width: 1000px){.about-pricing .col .wrap{padding-bottom:0}}.about-pricing .col .wrap ul{color:#000}.about-pricing .col .wrap .financing-link p{color:#00A1ED;font-size:1.5625rem;font-weight:700;margin-top:1rem}.about-pricing .col .wrap .financing-link a{color:#00A1ED;font-size:1.5625rem;font-weight:700;margin-top:1rem;text-decoration:underline}
+.about-pricing {
+  background-color: #F0F0F0;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 2rem 0 2rem 0;
+}
+@media (min-width: 1000px) {
+  .about-pricing {
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+  }
+}
+.about-pricing .col {
+  display: flex;
+  align-self: center;
+}
+.about-pricing .col .wrap {
+  max-width: 490px;
+  margin: 0 auto;
+  padding: 0 1rem 4rem 1rem;
+}
+@media (min-width: 1000px) {
+  .about-pricing .col .wrap {
+    padding-bottom: 0;
+  }
+}
+.about-pricing .col .wrap ul {
+  color: #000000;
+}
+.about-pricing .col .wrap .financing-link p {
+  color: #00A1ED;
+  font-size: 1.5625rem;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+.about-pricing .col .wrap .financing-link a {
+  color: #00A1ED;
+  font-size: 1.5625rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=two_columns.css.map */

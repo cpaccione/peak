@@ -50,6 +50,7 @@ $col_two_sub_title = get_field('col_two_sub_title');
             </ul>
         </div>
     </div>
+    <?php if ($col_two_image || $col_two_sub_title){ ?>
     <div class="line"></div>
     <div class="pricing-wrap">
         <div class="col">
@@ -59,4 +60,5 @@ $col_two_sub_title = get_field('col_two_sub_title');
             <p><?php echo $col_two_sub_title; ?></p>
         </div>
     </div>
+    <?php } ?>
 </div>

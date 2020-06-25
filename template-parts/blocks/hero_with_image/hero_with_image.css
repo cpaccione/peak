@@ -1,67 +1,112 @@
 .container-1000 {
   max-width: 1000px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 .container {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 1rem 0 1rem; }
+  padding: 0 1rem 0 1rem;
+}
 
+.is-style-container-1000 {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem 0 1rem;
+}
+
+.is-style-container-700 {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 1rem 0 1rem;
+}
+
+.wp-block-group {
+  padding: 0 1rem 0 1rem;
+}
+
+@media (min-width: 782px) {
+  .wp-block-column:not(:first-child) {
+    margin-left: 4rem;
+  }
+}
 .home-hero {
   background-size: cover;
   background-repeat: no-repeat;
   height: auto;
   display: flex;
-  align-items: center; }
-  @media (min-width: 700px) {
-    .home-hero {
-      height: 500px; } }
-  .home-hero .wrap {
-    padding: 2rem; }
-    .home-hero .wrap .button {
-      margin-right: 1rem; }
-    .home-hero .wrap h1 {
-      font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
-      font-weight: 700;
-      font-size: 2rem;
-      line-height: 1;
-      text-transform: uppercase;
-      color: #ffffff;
-      margin: 0 0 3rem 0; }
-      @media (min-width: 400px) {
-        .home-hero .wrap h1 {
-          font-size: 2.5rem; } }
-      @media (min-width: 600px) {
-        .home-hero .wrap h1 {
-          font-size: 3.125rem; } }
-      @media (min-width: 800px) {
-        .home-hero .wrap h1 {
-          font-size: 5.625rem; } }
-    .home-hero .wrap h2 {
-      font-family: 'Roboto', Arial, Helvetica, sans-serif;
-      font-weight: 700;
-      font-size: 1rem;
-      line-height: 1.2;
-      color: #ffffff;
-      margin: 0 0 1rem 0; }
-      @media (min-width: 400px) {
-        .home-hero .wrap h2 {
-          font-size: 1.2rem; } }
-      @media (min-width: 600px) {
-        .home-hero .wrap h2 {
-          font-size: 1.375rem; } }
-      @media (min-width: 800px) {
-        .home-hero .wrap h2 {
-          font-size: 1.5625rem; } }
-    .home-hero .wrap .phone {
-      color: #ffffff;
-      text-decoration: none;
-      font-size: 1rem;
-      font-weight: 700;
-      padding: 1rem 0 0 0;
-      display: inline-block; }
-      @media (min-width: 400px) {
-        .home-hero .wrap .phone {
-          font-size: 1.25rem; } }
+  align-items: center;
+}
+@media (min-width: 700px) {
+  .home-hero {
+    height: 500px;
+  }
+}
+.home-hero .wrap {
+  padding: 2rem;
+}
+.home-hero .wrap .button {
+  margin-right: 1rem;
+}
+.home-hero .wrap h1 {
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 0 3rem 0;
+}
+@media (min-width: 400px) {
+  .home-hero .wrap h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 600px) {
+  .home-hero .wrap h1 {
+    font-size: 3.125rem;
+  }
+}
+@media (min-width: 800px) {
+  .home-hero .wrap h1 {
+    font-size: 5.625rem;
+  }
+}
+.home-hero .wrap h2 {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: #ffffff;
+  margin: 0 0 1rem 0;
+}
+@media (min-width: 400px) {
+  .home-hero .wrap h2 {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 600px) {
+  .home-hero .wrap h2 {
+    font-size: 1.375rem;
+  }
+}
+@media (min-width: 800px) {
+  .home-hero .wrap h2 {
+    font-size: 1.5625rem;
+  }
+}
+.home-hero .wrap .phone {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 1rem 0 0 0;
+  display: inline-block;
+}
+@media (min-width: 400px) {
+  .home-hero .wrap .phone {
+    font-size: 1.25rem;
+  }
+}
 
 /*# sourceMappingURL=hero_with_image.css.map */

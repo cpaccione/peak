@@ -16,7 +16,7 @@ if (!empty($block['anchor'])) {
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
-$className = 'home-services';
+$className = $block['className'] === 'wide' ? '' : 'home-services';
 if (!empty($block['className'])) {
   $className .= ' ' . $block['className'];
 }
@@ -33,7 +33,7 @@ $link = get_field('link');
 ?>
 <div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
 
-  <div class="container-1000">
+  <div class="<?php $block['className'] === 'wide' ? '' : 'container-1000' ?>">
     <h2><?php echo $title; ?></h2>
     <p><?php echo $sub_title; ?></p>
 
@@ -94,25 +94,33 @@ $link = get_field('link');
         <?php echo $modal_text; ?>
       </p>
 
+      <?php var_dump(get_field('appliance_logos')); wp_reset_postdata(); ?>
+
       <?php if (have_rows('appliance_logos')){ ?>
 
         <div class="modal-logos">
 
-          <?php while (have_rows('appliance_logos')) : the_row();
+          <?php while (have_rows('appliance_logos')) : $row = the_row();
             $logo = get_sub_field('logo');
+            echo '<pre>';
+            var_dump( $row );
+            var_dump($logo);
+          echo '</pre>';
           ?>
 
             <img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" />
 
           <?php endwhile; ?>
 
+          <h2>TEST</h2>
+
         </div>
 
-      <?php } else { ?>
+      <?php } //else { ?>
 
-        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/modal_brands.svg" alt="Peak Brands">
+        <!-- <img src="<?php // echo esc_url(get_template_directory_uri()); ?>/images/modal_brands.svg" alt="Peak Brands"> -->
 
-      <?php } ?>
+      <?php //} ?>
 
       <p class="small-text">Don’t see your brand? No worries, contact us and we’ll see if we can service your appliance.</p>
       <hr>

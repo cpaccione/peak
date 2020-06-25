@@ -8,7 +8,6 @@
 
     @media (max-width: 960px) {
         background-image: none !important;
-
     }
 
     .container-bg {
@@ -26,11 +25,15 @@
     }
 
     .hero-featured {
-    	width: 422px;
+        width: 422px;
+        height: 100%;
     	position: absolute;
     	top: 0;
         right: 0;
         z-index: 3;
+        background-position: top left;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     .container {

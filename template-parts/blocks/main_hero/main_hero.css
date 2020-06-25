@@ -55,10 +55,14 @@
 }
 .main-hero .hero-featured {
   width: 422px;
+  height: 100%;
   position: absolute;
   top: 0;
   right: 0;
   z-index: 3;
+  background-position: top left;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .main-hero .container {
   z-index: 3;

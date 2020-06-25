@@ -918,6 +918,9 @@ ul {
 .site-footer .site-info .schedule-service ul li .financing-button:hover {
   color: #ffffff;
 }
+.site-footer .site-info .schedule-service ul li:last-of-type {
+  line-height: 35px;
+}
 .site-footer .site-info .schedule-service .service-button {
   background-color: #E50019;
   text-decoration: none;
@@ -987,6 +990,23 @@ ul {
 }
 .site-footer .site-info .footer-logos ul li .footer-logo {
   width: 106px;
+}
+.site-footer #site-footer-print,
+.site-footer #site-footer-print > * {
+  color: #ffffff;
+  font-size: 0.875rem;
+  text-decoration: none;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.site-footer #site-footer-print p,
+.site-footer #site-footer-print > * p {
+  padding: 15px 0px;
+}
+.site-footer #site-footer-print a,
+.site-footer #site-footer-print > * a {
+  color: white;
 }
 
 .hero-with-image .hwi h2 {

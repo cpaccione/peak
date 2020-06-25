@@ -21,15 +21,24 @@
   margin-bottom: 2rem;
 }
 
-.questions.colored {
+.questions.colored,
+.questions.blue {
   background-color: #006B9D;
+  padding: 30px;
 }
-.questions.colored h2, .questions.colored p {
+.questions.colored h2, .questions.colored p,
+.questions.blue h2,
+.questions.blue p {
   color: white;
 }
-.questions.colored a {
+.questions.colored a,
+.questions.blue a {
   background-color: #E50019;
   color: white;
+}
+
+.questions.left * {
+  text-align: left;
 }
 
 /*# sourceMappingURL=cta_block.css.map */

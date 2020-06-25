@@ -47,3 +47,18 @@
         margin: 0 auto 2rem auto;
     }
 }
+
+.pricing.grey {
+    background-color: $peak-light-grey;
+    color: black;
+}
+
+.pricing.white {
+    background-color: white;
+    color: black;
+    padding: 30px 0px;
+
+    .pricing-wrap .col:first-of-type {
+        margin-right: 15px;
+    }
+}

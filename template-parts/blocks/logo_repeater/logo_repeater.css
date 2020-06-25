@@ -1,2 +1,11 @@
-.brands{max-width:1000px;padding:0 1rem 0 1rem;margin:0 auto;display:grid;grid-template-columns:repeat(5, 1fr);grid-gap:2rem;margin-bottom:2.5rem}
+.brands {
+  max-width: 1000px;
+  padding: 0 1rem 0 1rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
 /*# sourceMappingURL=logo_repeater.css.map */

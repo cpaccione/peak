@@ -182,6 +182,22 @@
         font-size: 2.5rem;
         color: $peak-blue;
     }
+
+    .modal-logos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .modal-logo {
+            height: 60px;
+            margin: 20px;
+            flex-basis: calc(100%/3 - 40px);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+    }
   }
   
   /* The Close Button */

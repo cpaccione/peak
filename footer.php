@@ -50,9 +50,9 @@
 			</div>
 		</div><!-- .site-info -->
 		<div id="site-footer-print">
-				<hr>
-				<p>&copy;<?php echo date("Y"); ?> Peak Heating Cooling Refrigeration Inc. | All rights reserved. | <a href="/privacy-policy">Privacy policy.</a></p>
-			</div>
+			<hr>
+			<p>&copy;<?php echo date("Y"); ?> Peak Heating Cooling Refrigeration Inc. | All rights reserved. | <a href="/privacy-policy">Privacy policy.</a></p>
+		</div>
 	</div>
 </footer><!-- #colophon -->
 </div><!-- #page -->

@@ -167,6 +167,20 @@
   font-size: 2.5rem;
   color: #006B9D;
 }
+.modal-content .modal-logos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.modal-content .modal-logos .modal-logo {
+  height: 60px;
+  margin: 20px;
+  flex-basis: calc(100%/3 - 40px);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
 
 /* The Close Button */
 .close {

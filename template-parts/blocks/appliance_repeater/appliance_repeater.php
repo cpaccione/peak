@@ -42,122 +42,57 @@ $link = get_field('link');
 
       <div class="service-grid">
 
-        <?php while (have_rows('appliance_repeater')) : the_row();
+        <?php
+        $index = -1;
+        while (have_rows('appliance_repeater')) : the_row();
           // vars
           $service = get_sub_field('service');
           $image = get_sub_field('image');
-          $modal_text = get_sub_field('popup_text');
+          $popup_text = get_sub_field('popup_text');
+          $index++;
         ?>
 
-          <div class="icon-wrap modal-button">
-            <div class="icon">
-              <img class="appliance-icon" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+          <div class="icon-wrap modal-button" data-index="<?php echo $index; ?>">
+            <div class="icon" data-index="<?php echo $index; ?>">
+              <img id="appliance-icon-<?php echo $index; ?>" class="appliance-icon" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" data-index="<?php echo $index; ?>">
             </div>
-            <p class="appliance-icon-title"><?php echo $service; ?></p>
+            <p id="appliance-icon-title-<?php echo $index; ?>" class="appliance-icon-title" data-index="<?php echo $index; ?>"><?php echo $service; ?></p>
+            <?php if ($popup_text) : ?>
+              <p id="popup-text-<?php echo $index; ?>" data-text="<?php echo $popup_text; ?>" style="display: none"></p>
+            <?php endif; ?>
+            <?php
+            if (have_rows('appliance_logos')) :
+              while (have_rows('appliance_logos')) : the_row();
+                $logo = get_sub_field('logo');
+            ?>
+                <div class="popup-logos-<?php echo $index; ?>" data-src="<?php echo $logo['url']; ?>" data-alt="<?php echo $logo['alt']; ?>" style="display: none"></div>
+            <?php
+              endwhile;
+            endif;
+            ?>
           </div>
 
-
-        <?php endwhile; ?>
+      <?php
+        endwhile;
+      endif;
+      ?>
 
       </div>
 
-    <?php endif; ?>
+      <?php
 
+      if ($link) :
+        $link_url = $link['url'];
+        $link_title = $link['title'];
+        $link_target = $link['target'] ? $link['target'] : '_self';
+      ?>
 
-    <?php
+        <a class="button" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
 
-    if ($link) :
-      $link_url = $link['url'];
-      $link_title = $link['title'];
-      $link_target = $link['target'] ? $link['target'] : '_self';
-    ?>
-
-      <a class="button" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
-
-    <?php endif; ?>
+      <?php endif; ?>
 
   </div>
 </div>
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <div class="modal-icon-wrap">
-      <div class="modal-icon">
-        <img class="modal-app-icon" src="" alt="Peak Icon">
-      </div>
-      <p class="modal-icon-name"></p>
-      <p class="intro-text">
-        <?php echo $modal_text; ?>
-      </p>
-
-      <?php var_dump(get_field('appliance_logos')); wp_reset_postdata(); ?>
-
-      <?php if (have_rows('appliance_logos')){ ?>
-
-        <div class="modal-logos">
-
-          <?php while (have_rows('appliance_logos')) : $row = the_row();
-            $logo = get_sub_field('logo');
-            echo '<pre>';
-            var_dump( $row );
-            var_dump($logo);
-          echo '</pre>';
-          ?>
-
-            <img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" />
-
-          <?php endwhile; ?>
-
-          <h2>TEST</h2>
-
-        </div>
-
-      <?php } //else { ?>
-
-        <!-- <img src="<?php // echo esc_url(get_template_directory_uri()); ?>/images/modal_brands.svg" alt="Peak Brands"> -->
-
-      <?php //} ?>
-
-      <p class="small-text">Don’t see your brand? No worries, contact us and we’ll see if we can service your appliance.</p>
-      <hr>
-      <a class="button" href="/schedule-service">Schedule Service</a>
-    </div>
-  </div>
-
-</div>
-
-
-<script>
-  (function($) {
-    const $appButton = $('.modal-button');
-    const $appModal = $('.modal');
-    const $closeButton = $('.close');
-    const $modalContent = $('.modal-content');
-
-    $appButton.click(function(e) {
-      e.preventDefault();
-      const image = $(this).closest('.icon-wrap').find('img.appliance-icon').attr('src');
-      const title = $(this).closest('.icon-wrap').find('p.appliance-icon-title').context.innerText;
-      
-      $appModal.addClass('modal-show');
-      $('.modal-app-icon').attr('src', image);
-      $('.modal-icon-name').text(title);
-    });
-  })(jQuery);
-
-
-  const modal = document.querySelector('#myModal');
-  const modalCloseButton = document.querySelector('.close');
-
-  if (modal) {
-    modal.addEventListener('click', function(e) {
-      if (e.target == modal || e.target == modalCloseButton) {
-        modal.classList.remove('modal-show');
-      }
-    })
-  }
-</script>
+<!-- Modal Popup -->
+<?php include "modal.php"; ?>

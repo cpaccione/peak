@@ -10,6 +10,12 @@
   max-width: 623px;
   margin: 0 auto;
 }
+@media (max-width: 767px) {
+  .pricing .pricing-wrap {
+    display: block;
+    text-align: left;
+  }
+}
 .pricing .pricing-wrap img {
   margin-bottom: 1rem;
 }

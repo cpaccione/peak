@@ -12,6 +12,11 @@
         max-width: 623px;
         margin: 0 auto;
 
+        @media (max-width: 767px){
+            display: block;
+            text-align: left;
+        }
+
         img {
             margin-bottom: 1rem;
         }

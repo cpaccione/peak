@@ -1,3 +1,7 @@
-
+@media (max-width: 680px) {
+  .contact-info img {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=contact_graphic.css.map */

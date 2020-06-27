@@ -930,7 +930,7 @@ ul {
   padding-right: 1rem;
   padding-left: 1rem;
 }
-@media (max-width: 599px) {
+@media (max-width: 767px) {
   .site-footer {
     padding-bottom: 65px;
   }
@@ -945,7 +945,7 @@ ul {
     grid-template-columns: 2fr 1fr;
   }
 }
-@media (max-width: 599px) {
+@media (max-width: 767px) {
   .site-footer .site-info {
     text-align: center;
   }
@@ -965,7 +965,7 @@ ul {
   margin-bottom: 45px;
   width: 106px;
 }
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .site-footer .site-info .schedule-service ul #mobile-footer-logo {
     display: none;
   }
@@ -978,7 +978,7 @@ ul {
     margin-right: 1rem;
   }
 }
-@media (max-width: 599px) {
+@media (max-width: 767px) {
   .site-footer .site-info .schedule-service ul li {
     text-align: center;
   }
@@ -995,7 +995,7 @@ ul {
 .site-footer .site-info .schedule-service ul li .financing-button:hover {
   color: #ffffff;
 }
-@media (max-width: 599px) {
+@media (max-width: 767px) {
   .site-footer .site-info .schedule-service ul li .financing-button {
     text-align: center;
     margin: 0 auto;
@@ -1031,7 +1031,7 @@ ul {
 .site-footer .site-info .footer-menu ul li {
   margin-right: 1rem;
 }
-@media (max-width: 599px) {
+@media (max-width: 767px) {
   .site-footer .site-info .footer-menu ul li {
     margin-right: 0px;
     padding: 10px 0px;
@@ -1043,7 +1043,7 @@ ul {
   text-decoration: none;
   font-weight: 700;
 }
-@media (max-width: 599px) {
+@media (max-width: 767px) {
   .site-footer .site-info .social-media {
     display: none;
   }
@@ -1053,7 +1053,7 @@ ul {
   list-style: none;
   display: flex;
 }
-@media (max-width: 599px) {
+@media (max-width: 767px) {
   .site-footer .site-info .social-media ul {
     justify-content: center;
   }
@@ -1077,7 +1077,7 @@ ul {
 .site-footer .site-info .social-media ul li a:hover .fab {
   color: #E50019;
 }
-@media (max-width: 599px) {
+@media (max-width: 767px) {
   .site-footer .site-info .footer-logos {
     display: none;
   }
@@ -1087,7 +1087,7 @@ ul {
   list-style: none;
   padding: 0;
 }
-@media (max-width: 599px) {
+@media (max-width: 767px) {
   .site-footer .site-info .footer-logos ul {
     justify-content: center;
   }
@@ -1152,7 +1152,7 @@ ul {
   justify-content: center;
   align-items: center;
 }
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   #mobile-footer-cta {
     display: none !important;
   }

@@ -1,43 +1,64 @@
-@import '../../../scss/vars';
-@import '../../../scss/containers';
+@import "../../../scss/vars";
+@import "../../../scss/containers";
 
 .main-hero {
-	position: relative;
-    background-color: $peak-blue-two;
-    color: $white;
+  position: relative;
+  background-color: $peak-blue-two;
+  color: $white;
 
-    @media (max-width: 960px) {
-        background-image: none !important;
+  @media (max-width: 960px) {
+    background-image: none !important;
+  }
+
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+
+    #hero-text-container {
+        display: block
     }
 
     .container-bg {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: calc(100% - 442px);
-        height: 100%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        z-index: 2;
-        opacity: 0.25;
-        filter: grayscale(100%)
+        width: 100% !important;
     }
 
     .hero-featured {
-        width: 422px;
-        height: 100%;
-    	position: absolute;
-    	top: 0;
-        right: 0;
-        z-index: 3;
-        background-position: top left;
-        background-size: cover;
-        background-repeat: no-repeat;
+        display: block;
+        position: relative !important;
+        height: 215px !important;
+        width: 100% !important;
     }
+  }
 
-    .container {
-        z-index: 3;
-        position: relative;
-    }
+  .container-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: calc(100% - 442px);
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    opacity: 0.25;
+    filter: grayscale(100%);
+  }
+
+  .hero-featured {
+    width: 422px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    background-position: top left;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .container {
+    z-index: 3;
+    position: relative;
+  }
 }

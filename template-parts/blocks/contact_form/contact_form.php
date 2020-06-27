@@ -15,6 +15,11 @@ if (!empty($block['anchor'])) {
     $id = $block['anchor'];
 }
 
+// Create class attribute allowing for custom "className" values.
+if (!empty($block['className'])) {
+    $className = $block['className'];
+}
+
 // Load values and assign defaults.
 $title = get_field('title');
 $subtitle = get_field('subtitle');

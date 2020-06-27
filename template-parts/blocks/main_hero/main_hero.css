@@ -40,6 +40,25 @@
     background-image: none !important;
   }
 }
+@media (max-width: 767px) {
+  .main-hero {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+  .main-hero #hero-text-container {
+    display: block;
+  }
+  .main-hero .container-bg {
+    width: 100% !important;
+  }
+  .main-hero .hero-featured {
+    display: block;
+    position: relative !important;
+    height: 215px !important;
+    width: 100% !important;
+  }
+}
 .main-hero .container-bg {
   position: absolute;
   left: 0;

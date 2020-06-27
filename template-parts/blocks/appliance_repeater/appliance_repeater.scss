@@ -72,12 +72,16 @@
         max-width: 100%;
         margin: 0 auto;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-gap: 2rem;
         padding: 2rem 0 4rem 0;
 
-        @media (min-width: 600px) {
-            grid-template-columns: repeat(3, 1fr);
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: 640px) {
+            grid-template-columns: 1fr;
         }
 
         .icon-wrap {
@@ -174,6 +178,19 @@
         position: absolute;
         transform: translate(-50%, -50%);
 
+        @media (max-width: 768px){
+            width: 90%;
+        }
+
+        @media (max-width: 640px){
+            width: 100%;
+            left: 0px;
+            top: 0px;
+            position: relative;
+            transform: none;
+            min-height: 100%;
+        }
+
         img {
             margin: 0 auto;
             display: block;
@@ -220,6 +237,14 @@
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center;
+
+            @media (max-width: 768px){
+                flex-basis: calc(100%/2 - 40px);
+            }
+
+            // @media (max-width: 640px){
+            //     flex-basis: calc(100%/2 - 15px);
+            // }
         }
     }
   }

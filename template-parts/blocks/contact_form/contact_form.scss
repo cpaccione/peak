@@ -7,6 +7,14 @@
   h1 {
     color: $peak-blue;
     text-transform: uppercase;
+
+    @media (max-width: 767px){
+      display: none;
+
+      &+hr {
+        display: none;
+      }
+    }
   }
 
   input[type="submit"] {
@@ -39,6 +47,10 @@
       }
     }
   }
+}
+
+.schedule-service #form h1 {
+  display: block !important;
 }
 
 /*the container must be positioned relative:*/

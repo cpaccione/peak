@@ -47,8 +47,10 @@ $link = get_field('link');
         while (have_rows('appliance_repeater')) : the_row();
           // vars
           $service = get_sub_field('service');
+          $sub_text = get_sub_field('appliance_sub_text');
           $image = get_sub_field('image');
           $popup_text = get_sub_field('popup_text');
+          
           $index++;
         ?>
 
@@ -57,6 +59,19 @@ $link = get_field('link');
               <img id="appliance-icon-<?php echo $index; ?>" class="appliance-icon" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" data-index="<?php echo $index; ?>">
             </div>
             <p id="appliance-icon-title-<?php echo $index; ?>" class="appliance-icon-title" data-index="<?php echo $index; ?>"><?php echo $service; ?></p>
+            <!-- SubText -->
+            <?php
+              if ($sub_text):
+            ?>
+              <hr class="sub-text-hr">
+              <p class="sub-text">
+                <?php echo $sub_text; ?>
+              </p>
+            <?php
+              endif;
+            ?>
+
+            <!-- Modal -->
             <?php if ($popup_text) : ?>
               <p id="popup-text-<?php echo $index; ?>" data-text="<?php echo $popup_text; ?>" style="display: none"></p>
             <?php endif; ?>

@@ -88,6 +88,23 @@
         padding: 0;
     }
 
+    @media (max-width: 640px){
+        padding-top: 0px !important;
+    }
+
+    .col:first-of-type {
+        @media (max-width: 640px){
+            grid-row: 2;
+            margin-top: 30px;
+        }
+    }
+
+    .col:last-of-type {
+        @media (max-width: 640px){
+            grid-row: 1;
+        }
+    }
+
     .col {
         display: flex;
         align-self: center;

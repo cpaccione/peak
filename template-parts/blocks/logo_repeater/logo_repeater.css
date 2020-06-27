@@ -6,6 +6,13 @@
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 2rem;
   margin-bottom: 2.5rem;
+  justify-items: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .brands {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /*# sourceMappingURL=logo_repeater.css.map */

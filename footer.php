@@ -12,12 +12,22 @@
 
 ?>
 
+<div id="mobile-footer-cta">
+	<ul class="phone-button">
+		<li><a href="/schedule-service" class="nav-button">Schedule Service</a></li>
+		<li>Or call <a href="tel:+8475108302">847-510-8302</a></li>
+	</ul>
+</div>
+
 <footer id="colophon" class="site-footer">
 	<div class="container-1000">
 		<div class="site-info">
 			<div class="col">
 				<div class="schedule-service">
 					<ul>
+						<li id="mobile-footer-logo">
+							<img width="212" height="144" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/peak-logo@2x.png" class="custom-logo" alt="Peak Logo">
+						</li>
 						<li><a href="/schedule-service" class="service-button">schedule service</a></li>
 						<li><a href="/financing" class="financing-button">Financing Available</a></li>
 					</ul>
@@ -44,7 +54,7 @@
 				<div class="footer-logos">
 					<ul>
 						<li><img class="authorized-dealer-logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/factory_authorized_dealer@2x@2x.png" alt="Authorize Image Dealer"></li>
-						<li><a href="<?php echo esc_url(home_url('/')); ?>"><img class="footer-logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/peak-logo@2x.png" alt=""></a></li>
+						<li><a href="<?php echo esc_url(home_url('/')); ?>"><img class="footer-logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/peak-logo@2x.png" alt="Peak Logo"></a></li>
 					</ul>
 				</div>
 			</div>

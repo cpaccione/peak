@@ -291,7 +291,6 @@ ul {
   }
 }
 .home-hero {
-  background-image: url("../images/home-hero@2x.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: auto;

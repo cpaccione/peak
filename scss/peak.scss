@@ -49,6 +49,11 @@
     width: auto;
     height: auto;
     padding: 25px;
+    max-width: 300px;
+
+    img {
+        width: 100%;
+    }
 }
 
 @media (max-width: 680px){

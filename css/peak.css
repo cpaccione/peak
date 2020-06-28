@@ -1121,12 +1121,15 @@ ul {
 
 #mobile-footer-cta {
   position: fixed;
-  bottom: 0;
+  bottom: 0px;
   height: 65px;
   width: 100%;
   z-index: 9;
-  background-color: #B70014;
+  background-color: transparent;
   color: white;
+}
+#mobile-footer-cta #footer-cta-spacer {
+  height: 65px;
 }
 #mobile-footer-cta ul {
   display: flex;
@@ -1134,6 +1137,7 @@ ul {
   justify-content: space-evenly;
   align-items: center;
   height: 65px;
+  background-color: #B70014;
 }
 #mobile-footer-cta li {
   font-size: 16px;
@@ -1158,6 +1162,30 @@ ul {
   }
 }
 
+#mobile-footer-cta.show-footer-cta #footer-cta-spacer {
+  animation: 1s showFooterCta forwards;
+}
+
+#mobile-footer-cta.hide-footer-cta #footer-cta-spacer {
+  animation: 1s hideFooterCta forwards;
+}
+
+@keyframes showFooterCta {
+  from {
+    height: 65px;
+  }
+  to {
+    height: 0px;
+  }
+}
+@keyframes hideFooterCta {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 65px;
+  }
+}
 .hero-with-image .hwi h2 {
   font-size: 2rem;
   color: #ffffff;

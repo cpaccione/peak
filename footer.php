@@ -13,10 +13,13 @@
 ?>
 
 <div id="mobile-footer-cta">
-	<ul class="phone-button">
-		<li><a href="/schedule-service" class="nav-button">Schedule Service</a></li>
-		<li>Or call <a href="tel:+8475108302">847-510-8302</a></li>
-	</ul>
+	<div id="footer-cta-spacer"></div>
+	<div id="mobile-footer-cta-inner">
+		<ul class="phone-button">
+			<li><a href="/schedule-service" class="nav-button">Schedule Service</a></li>
+			<li>Or call <a href="tel:+8475108302">847-510-8302</a></li>
+		</ul>
+	</div>
 </div>
 
 <footer id="colophon" class="site-footer">
@@ -72,3 +75,52 @@
 </body>
 
 </html>
+
+<script>
+	// Scroll Script for Mobile Footer Schedule Banner
+	(function() {
+		const debounce = (func, wait) => {
+			let timeout;
+
+			return function executedFunction(...args) {
+				const later = () => {
+					timeout = null;
+					func(...args);
+				};
+
+				clearTimeout(timeout);
+				timeout = setTimeout(later, wait);
+			};
+		};
+
+		const footerCta = document.getElementById('mobile-footer-cta')
+		let button, buttonOffset, parent;
+
+		// Get Banner Parent
+		if (document.querySelector('.home-hero')) {
+			parent = document.querySelector('.home-hero')
+		} else if (document.querySelector('.main-hero')) {
+			parent = document.querySelector('.main-hero')
+		}
+
+		// Get Offset of Banner Button
+		if (parent !== undefined) {
+			button = parent.querySelector('.button')
+			console.log(parent)
+			console.log(button)
+			buttonOffset = button.getBoundingClientRect().top - 100 // 100 is nav height
+			console.log(buttonOffset)
+
+			window.addEventListener('scroll', debounce(function() {
+				console.log('scroll')
+				if (window.scrollY > buttonOffset) {
+					footerCta.classList.add('show-footer-cta')
+					footerCta.classList.remove('hide-footer-cta')
+				} else if (footerCta.classList.contains('show-footer-cta')) {
+					footerCta.classList.add('hide-footer-cta')
+					footerCta.classList.remove('show-footer-cta')
+				}
+			}), 50)
+		}
+	})()
+</script>

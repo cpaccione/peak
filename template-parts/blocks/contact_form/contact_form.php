@@ -32,7 +32,25 @@ $subtitle = get_field('subtitle');
             <hr />
         <?php } ?>
         <p><?php echo $subtitle; ?></p>
-        <?php echo do_shortcode('[contact-form-7 id="212" title="Contact Form"]') ?>
+        <?php 
+            // Don't have time to CMS this
+            $contactForm = '[contact-form-7 id="212" title="Contact Form"]';
+
+            if ($_SERVER["REQUEST_URI"]){
+                if (strpos('/appliance-repair/', $_SERVER["REQUEST_URI"]) === 0){
+                    $contactForm = '[contact-form-7 id="380" title="Contact Form Repair Preset"]';
+                    echo 'Repair';
+                } elseif (strpos('/installation/', $_SERVER["REQUEST_URI"]) === 0){
+                    $contactForm = '[contact-form-7 id="378" title="Contact Form Installation Preset"]';
+                    echo 'Installation';
+                } elseif (strpos('/maintenance/', $_SERVER["REQUEST_URI"]) === 0){
+                    $contactForm = '[contact-form-7 id="379" title="Contact Form Maintenance Preset"]';
+                    echo 'Maintenance';
+                }
+            }
+
+            echo do_shortcode($contactForm); 
+        ?>
     </div>
 </div>
 

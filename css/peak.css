@@ -1227,4 +1227,8 @@ ul {
   margin-left: -15px;
 }
 
+input[type=submit] {
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=peak.css.map */

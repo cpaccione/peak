@@ -75,6 +75,13 @@ ul {
   list-style: none;
 }
 
+.red {
+  color: #E50019 !important;
+}
+.red * {
+  color: #E50019 !important;
+}
+
 .header-wrap {
   background-color: #e6e6e6;
   position: fixed;
@@ -1202,6 +1209,20 @@ ul {
 
 .container-1000 .wp-block-group__inner-container .wp-block-columns {
   padding: 0px !important;
+}
+
+.ftl-logo {
+  background-color: darkgray;
+  width: auto;
+  height: auto;
+  padding: 25px;
+}
+
+@media (max-width: 680px) {
+  #service-areas {
+    width: calc(100% + 30px);
+    margin-left: -15px;
+  }
 }
 
 /*# sourceMappingURL=peak.css.map */

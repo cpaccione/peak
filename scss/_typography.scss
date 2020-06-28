@@ -56,3 +56,11 @@ ul {
     padding: 0;
     list-style: none;
 }
+
+.red {
+    color: $peak-red !important;
+
+    * {
+        color: $peak-red !important;
+    }
+}

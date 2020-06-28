@@ -1,0 +1,41 @@
+.standard-hero {
+  height: auto;
+  text-align: center;
+  padding: 3em 1em 3em 1em;
+  position: relative;
+
+  @media (min-width: 700px) {
+    height: 206px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1;
+    z-index: 3;
+    position: relative;
+
+    @media (min-width: 700px) {
+      font-size: 4rem;
+    }
+  }
+
+  #standard-hero-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    opacity: 0.25;
+    filter: grayscale(100%);
+  }
+}

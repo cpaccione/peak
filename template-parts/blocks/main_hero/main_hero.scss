@@ -16,7 +16,8 @@
     flex-wrap: wrap;
 
     #hero-text-container {
-        display: block
+        display: block;
+        position: relative;
     }
 
     .container-bg {
@@ -35,7 +36,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: calc(100% - 442px);
+    width: calc(100% - 420px);
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;

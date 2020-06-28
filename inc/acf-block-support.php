@@ -16,9 +16,9 @@ function register_acf_block_types() {
         'name'              => 'peak_standard_hero',
         'title'             => __('Peak Standard Hero'),
         'description'       => __('A block used to display title block'),
-        'render_template'   => 'template-parts/blocks/standard_hero/standard-hero.php',
+        'render_template'   => 'template-parts/blocks/standard_hero/standard_hero.php',
         'enqueue_assets'    => function() {
-            wp_enqueue_style( 'peak-title', get_template_directory_uri() . '/template-parts/blocks/standard_hero/standard-hero.css', array(), '1.0', 'all' );
+            wp_enqueue_style( 'peak-title', get_template_directory_uri() . '/template-parts/blocks/standard_hero/standard_hero.css', array(), '1.0', 'all' );
         },
         'category'          => 'common',
         'mode'              => 'auto',

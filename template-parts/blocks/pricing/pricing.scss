@@ -56,6 +56,11 @@
 .pricing.grey {
     background-color: $peak-light-grey;
     color: black;
+
+    p {
+        color: black;
+        font-weight: 100;
+    }
 }
 
 .pricing.white {

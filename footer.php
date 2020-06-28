@@ -94,6 +94,7 @@
 		};
 
 		const footerCta = document.getElementById('mobile-footer-cta')
+		const finance = document.querySelector('.ftl-logo')
 		let button, buttonOffset, parent;
 
 		// Get Banner Parent
@@ -106,19 +107,21 @@
 		// Get Offset of Banner Button
 		if (parent !== undefined) {
 			button = parent.querySelector('.button')
-			console.log(parent)
-			console.log(button)
 			buttonOffset = button.getBoundingClientRect().top - 100 // 100 is nav height
-			console.log(buttonOffset)
 
 			window.addEventListener('scroll', debounce(function() {
-				console.log('scroll')
 				if (window.scrollY > buttonOffset) {
 					footerCta.classList.add('show-footer-cta')
 					footerCta.classList.remove('hide-footer-cta')
 				} else if (footerCta.classList.contains('show-footer-cta')) {
 					footerCta.classList.add('hide-footer-cta')
 					footerCta.classList.remove('show-footer-cta')
+				}
+			}), 50)
+		} else if (finance){
+			window.addEventListener('scroll', debounce(function() {
+				if (!footerCta.classList.contains('show-footer-cta')) {
+					footerCta.classList.add('show-footer-cta')
 				}
 			}), 50)
 		}

@@ -48,6 +48,7 @@
   }
   .main-hero #hero-text-container {
     display: block;
+    position: relative;
   }
   .main-hero .container-bg {
     width: 100% !important;
@@ -63,7 +64,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  width: calc(100% - 442px);
+  width: calc(100% - 420px);
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;

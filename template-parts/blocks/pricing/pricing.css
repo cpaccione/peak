@@ -51,6 +51,10 @@
   background-color: #F0F0F0;
   color: black;
 }
+.pricing.grey p {
+  color: black;
+  font-weight: 100;
+}
 
 .pricing.white {
   background-color: white;

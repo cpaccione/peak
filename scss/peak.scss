@@ -56,9 +56,7 @@
     }
 }
 
-@media (max-width: 680px){
-    #service-areas {
-        width: calc(100% + 30px);
-        margin-left: -15px;
-    }
+#service-areas {
+    width: calc(100% + 30px);
+    margin-left: -15px;
 }

@@ -1231,4 +1231,8 @@ input[type=submit] {
   cursor: pointer;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*# sourceMappingURL=peak.css.map */

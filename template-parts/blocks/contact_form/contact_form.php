@@ -117,52 +117,52 @@ then close all select boxes:*/
         document.addEventListener("click", closeAllSelect);
 
 
-        // Set Default Select Values Based on URL
-        const service = document.querySelector('.service-needed').parentNode
-        const serviceSelect = service.querySelector('.select-selected')
-        const selectItems = service.querySelector('.select-items')
+        // Set Default Select Values Based on URL (Doesn't work with Contact Form 7 / Needs Further Integration)
+        // const service = document.querySelector('.service-needed').parentNode
+        // const serviceSelect = service.querySelector('.select-selected')
+        // const selectItems = service.querySelector('.select-items')
 
-        const setDropdown = (type) => {
-            serviceSelect.innerText = type
-            Array.from(selectItems.children).map((elem) => {
-                if (elem.innerText === type) {
-                    elem.classList.add("same-as-selected")
-                }
-            })
-        }
+        // const setDropdown = (type) => {
+        //     serviceSelect.innerText = type
+        //     Array.from(selectItems.children).map((elem) => {
+        //         if (elem.innerText === type) {
+        //             elem.classList.add("same-as-selected")
+        //         }
+        //     })
+        // }
 
-        if (window.location.href.includes('maintenance')) {
-            setDropdown("Maintenance")
-        } else if (window.location.href.includes('installation')) {
-            setDropdown("Installation")
-        } else if (window.location.href.includes('repair')) {
-            setDropdown("Repair")
-        }
+        // if (window.location.href.includes('maintenance')) {
+        //     setDropdown("Maintenance")
+        // } else if (window.location.href.includes('installation')) {
+        //     setDropdown("Installation")
+        // } else if (window.location.href.includes('repair')) {
+        //     setDropdown("Repair")
+        // }
 
-        // Remove Footer Popup on Form Interaction 
-        const form = document.getElementById('form');
+        // // Remove Footer Popup on Form Interaction 
+        // const form = document.getElementById('form');
 
-        if (form) {
-            const formClickables = [
-                ...Array.from(form.querySelectorAll('input')), 
-                ...Array.from(form.querySelectorAll('.custom-select')), 
-                ...Array.from(form.querySelectorAll('.select-selected')),
-                form.querySelector('textarea')
-            ]
+        // if (form) {
+        //     const formClickables = [
+        //         ...Array.from(form.querySelectorAll('input')), 
+        //         ...Array.from(form.querySelectorAll('.custom-select')), 
+        //         ...Array.from(form.querySelectorAll('.select-selected')),
+        //         form.querySelector('textarea')
+        //     ]
 
-            const addListener = (elem) => {
-                elem.addEventListener("click", () => {
-                    // Do not use cached selector as footer hasn't loaded yet
-                    if (document.getElementById('mobile-footer-cta')){
-                        document.getElementById('mobile-footer-cta').remove()
-                    }
-                })
-            }
+        //     const addListener = (elem) => {
+        //         elem.addEventListener("click", () => {
+        //             // Do not use cached selector as footer hasn't loaded yet
+        //             if (document.getElementById('mobile-footer-cta')){
+        //                 document.getElementById('mobile-footer-cta').remove()
+        //             }
+        //         })
+        //     }
 
-            formClickables.map((elem) => {
-                addListener(elem)
-            })
-        }
+        //     formClickables.map((elem) => {
+        //         addListener(elem)
+        //     })
+        // }
 
     })();
 </script>

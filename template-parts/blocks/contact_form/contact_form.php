@@ -32,25 +32,7 @@ $subtitle = get_field('subtitle');
             <hr />
         <?php } ?>
         <p><?php echo $subtitle; ?></p>
-        <?php 
-            // Don't have time to CMS this
-            $contactForm = '[contact-form-7 id="212" title="Contact Form"]';
-
-            if ($_SERVER["REQUEST_URI"]){
-                if (strpos('/appliance-repair/', $_SERVER["REQUEST_URI"]) === 0){
-                    $contactForm = '[contact-form-7 id="380" title="Contact Form Repair Preset"]';
-                    echo 'Repair';
-                } elseif (strpos('/installation/', $_SERVER["REQUEST_URI"]) === 0){
-                    $contactForm = '[contact-form-7 id="378" title="Contact Form Installation Preset"]';
-                    echo 'Installation';
-                } elseif (strpos('/maintenance/', $_SERVER["REQUEST_URI"]) === 0){
-                    $contactForm = '[contact-form-7 id="379" title="Contact Form Maintenance Preset"]';
-                    echo 'Maintenance';
-                }
-            }
-
-            echo do_shortcode($contactForm); 
-        ?>
+        <?php echo do_shortcode('[contact-form-7 id="212" title="Contact Form"]'); ?>
     </div>
 </div>
 
@@ -133,10 +115,29 @@ $subtitle = get_field('subtitle');
         /*if the user clicks anywhere outside the select box,
 then close all select boxes:*/
         document.addEventListener("click", closeAllSelect);
+
+
+        // Set Default Select Values Based on URL
+        const service = document.querySelector('.service-needed').parentNode
+        const serviceSelect = service.querySelector('.select-selected')
+        const selectItems = service.querySelector('.select-items')
+
+        const setDropdown = (type) => {
+            serviceSelect.innerText = type
+            Array.from(selectItems.children).map((elem) => {
+                if (elem.innerText === type) {
+                    elem.classList.add("same-as-selected")
+                }
+            })
+        }
+
+        if (window.location.href.includes('maintenance')) {
+            setDropdown("Maintenance")
+        } else if (window.location.href.includes('installation')) {
+            setDropdown("Installation")
+        } else if (window.location.href.includes('repair')) {
+            setDropdown("Repair")
+        }
+
     })();
 </script>
-
-<!-- <label>
-State<span>*</span>
-[select* State include_blank html_class="custom-select" "Alabama" "Alaska" "Arizona" "Arkansas" "California" "Colorado" "Connecticut" "Delaware" "Florida" "Georgia" "Hawaii" "Idaho" "Illinois" "Indiana" "Iowa" "Kansas" "Kentucky" "Louisiana" "Maine" "Maryland" "Massachusetts" "Michigan" "Minnesota" "Mississippi" "Missouri" "Montana" "Nebraska" "Nevada" "New Hampshire" "New Jersey" "New Mexico" "New York" "North Carolina" "North Dakota" "Ohio" "Oklahoma" "Oregon" "Pennsylvania" "Rhode Island" "South Carolina" "South Dakota" "Tennessee" "Texas" "Utah" "Vermont" "Virginia" "Washington" "West Virginia" "Wisconsin" "Wyoming"]
-</label> -->

@@ -139,30 +139,30 @@ then close all select boxes:*/
         //     setDropdown("Repair")
         // }
 
-        // // Remove Footer Popup on Form Interaction 
-        // const form = document.getElementById('form');
+        // Remove Footer Popup on Form Interaction 
+        const form = document.getElementById('form');
 
-        // if (form) {
-        //     const formClickables = [
-        //         ...Array.from(form.querySelectorAll('input')), 
-        //         ...Array.from(form.querySelectorAll('.custom-select')), 
-        //         ...Array.from(form.querySelectorAll('.select-selected')),
-        //         form.querySelector('textarea')
-        //     ]
+        if (form) {
+            const formClickables = [
+                ...Array.from(form.querySelectorAll('input')), 
+                ...Array.from(form.querySelectorAll('.custom-select')), 
+                ...Array.from(form.querySelectorAll('.select-selected')),
+                form.querySelector('textarea')
+            ]
 
-        //     const addListener = (elem) => {
-        //         elem.addEventListener("click", () => {
-        //             // Do not use cached selector as footer hasn't loaded yet
-        //             if (document.getElementById('mobile-footer-cta')){
-        //                 document.getElementById('mobile-footer-cta').remove()
-        //             }
-        //         })
-        //     }
+            const addListener = (elem) => {
+                elem.addEventListener("click", () => {
+                    // Do not use cached selector as footer hasn't loaded yet
+                    if (document.getElementById('mobile-footer-cta')){
+                        document.getElementById('mobile-footer-cta').remove()
+                    }
+                })
+            }
 
-        //     formClickables.map((elem) => {
-        //         addListener(elem)
-        //     })
-        // }
+            formClickables.map((elem) => {
+                addListener(elem)
+            })
+        }
 
     })();
 </script>

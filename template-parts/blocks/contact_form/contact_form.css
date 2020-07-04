@@ -110,4 +110,23 @@
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+/* Radios in CF7 */
+span.wpcf7-checkbox {
+  display: flex;
+  flex-direction: row;
+}
+
+span.wpcf7-list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: black !important;
+  margin-bottom: 15px;
+}
+
+#form input[type=checkbox] {
+  width: auto;
+  margin-right: 15px;
+}
+
 /*# sourceMappingURL=contact_form.css.map */

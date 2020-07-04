@@ -121,6 +121,7 @@
 span.wpcf7-checkbox {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 span.wpcf7-list-item {
@@ -129,6 +130,10 @@ span.wpcf7-list-item {
   align-items: center;
   color: black !important;
   margin-bottom: 15px;
+}
+
+.wpcf7-list-item-label {
+  color: black !important;
 }
 
 #form input[type="checkbox"]{

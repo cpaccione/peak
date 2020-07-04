@@ -40,7 +40,7 @@
     background-image: none !important;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .main-hero {
     display: flex;
     flex-direction: column-reverse;
@@ -83,6 +83,10 @@
   background-position: top left;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.main-hero .hero-with-image {
+  height: auto;
+  padding: 15px 0px;
 }
 .main-hero .container {
   z-index: 3;

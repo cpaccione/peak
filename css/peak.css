@@ -680,6 +680,11 @@ ul {
     padding-top: 0px !important;
   }
 }
+@media (max-width: 1640px) {
+  .about-pricing .col:first-of-type {
+    padding: 15px 0px;
+  }
+}
 @media (max-width: 640px) {
   .about-pricing .col:first-of-type {
     grid-row: 2;

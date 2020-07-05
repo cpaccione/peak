@@ -16,6 +16,11 @@
         display: flex;
         align-self: center;
 
+        img {
+            object-fit: cover;
+            height: 100%;
+        }
+
         .wrap {
             max-width: 490px;
             margin: 0 auto;

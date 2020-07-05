@@ -14,6 +14,10 @@
   display: flex;
   align-self: center;
 }
+.about-pricing .col img {
+  object-fit: cover;
+  height: 100%;
+}
 .about-pricing .col .wrap {
   max-width: 490px;
   margin: 0 auto;

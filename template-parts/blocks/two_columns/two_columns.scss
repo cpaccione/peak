@@ -12,6 +12,10 @@
         padding: 0;
     }
 
+    @media (min-width: 640px) and (max-width: 999px){
+        padding-bottom: 0px !important;
+    }
+
     .col {
         display: flex;
         align-self: center;
@@ -19,6 +23,7 @@
         img {
             object-fit: cover;
             height: 100%;
+            object-position: 15%;
         }
 
         .wrap {

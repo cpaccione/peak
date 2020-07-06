@@ -10,6 +10,11 @@
     padding: 0;
   }
 }
+@media (min-width: 640px) and (max-width: 999px) {
+  .about-pricing {
+    padding-bottom: 0px !important;
+  }
+}
 .about-pricing .col {
   display: flex;
   align-self: center;
@@ -17,6 +22,7 @@
 .about-pricing .col img {
   object-fit: cover;
   height: 100%;
+  object-position: 15%;
 }
 .about-pricing .col .wrap {
   max-width: 490px;
